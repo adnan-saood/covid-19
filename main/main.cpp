@@ -1,20 +1,23 @@
-// main.cpp : Defines the entry point for the console application.
-//
-
 #include "headers.h"
 #include "imglist.h"
+#include "med.h"
 
+cv::String data_dir = "C:\\Users\\adnan\\OneDrive\\Documents\\image_proc\\hw3\\covid19\\";
 int main()
 {
-	imglist a(100, "C:\\Users\\adnan\\OneDrive\\Documents\\image_proc\\hw3\\covid19\\tr_im\\", "tr_im_z", "png");
+	imglist ct(100, data_dir + "tr_im\\", "tr_im_z", "png");
+	ct.load_entire_set();
 
-	a.load_entire_set();
-	for (int i = 1; i <= 100; i++)
-	{
-		imshow("hi", a.list[i-1]);
-		waitKey(250);
-	}
+	imglist mask(100, data_dir + "tr_mask\\", "tr_mask_z", "png");
+	mask.load_entire_set();
 
-	system("pause");
+	imglist lungmask(100, data_dir + "tr_lungmasks\\", "tr_lungmasks_updated_z", "png");
+	lungmask.load_entire_set();
+
+	med a(ct[2]);
+	a.drawhist("please");
+	waitKey();
+
+
 	return 0;
 }

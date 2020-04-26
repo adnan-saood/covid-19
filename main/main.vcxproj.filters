@@ -24,12 +24,18 @@
     <ClCompile Include="imglist.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="med.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="imglist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="med.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

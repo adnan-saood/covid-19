@@ -17,6 +17,10 @@ imglist::imglist(int num, String dirc, String base_name, String file_type)
 imglist::~imglist()
 {
 }
+Mat & imglist::operator[](int index)
+{
+	return this->list[index];
+}
 void imglist::set_base_string(String s)
 {
 	imglist::base_string = s;
