@@ -14,7 +14,7 @@ int main()
 	imglist lungmask(100, data_dir + "tr_lungmasks\\", "tr_lungmasks_updated_z", "png");
 	lungmask.load_entire_set();
 
-	med a(ct[2]);
+	med a(ct[20]);
 	a.drawhist("please");
 	waitKey();
 
