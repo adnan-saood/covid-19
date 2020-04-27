@@ -15,7 +15,7 @@ int main()
 	lungmask.load_entire_set();
 
 	med a(ct[20]);
-	a.drawhist("please");
+	imshow("otsu", a.otsu());
 	waitKey();
 
 

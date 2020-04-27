@@ -76,3 +76,11 @@ cv::Mat med::drawhist(String name)
 	imshow(name, ans);
 	return ans;
 }
+
+
+Mat med::otsu()
+{
+	Mat ans; 
+	cv::threshold(this->ct, ans, 0, 255, THRESH_OTSU);
+	return ans;
+}

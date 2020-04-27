@@ -11,7 +11,8 @@ public:
 	~med();
 
 	vector<unsigned long long> histogram();
-	
+	Mat otsu();
+
 	cv::Mat drawhist(String name);
 
 	Mat ct;
