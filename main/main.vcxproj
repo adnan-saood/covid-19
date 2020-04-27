@@ -152,12 +152,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="imglist.cpp" />
+    <ClCompile Include="lung.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="med.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers.h" />
     <ClInclude Include="imglist.h" />
+    <ClInclude Include="lung.h" />
     <ClInclude Include="med.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

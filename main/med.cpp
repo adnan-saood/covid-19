@@ -84,3 +84,10 @@ Mat med::otsu()
 	cv::threshold(this->ct, ans, 0, 255, THRESH_OTSU);
 	return ans;
 }
+
+Mat med::thresholded_globally()
+{
+	Mat ans;
+	cv::adaptiveThreshold(this->ct, ans, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
+	return ans;
+}

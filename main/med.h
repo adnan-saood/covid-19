@@ -1,8 +1,7 @@
 #pragma once
-#include "C:\ocv42\build\include\opencv2\core\mat.hpp"
+
 #include "headers.h"
-class med :
-	public cv::Mat
+class med
 {
 public:
 	med();
@@ -12,6 +11,7 @@ public:
 
 	vector<unsigned long long> histogram();
 	Mat otsu();
+	Mat thresholded_globally();
 
 	cv::Mat drawhist(String name);
 
