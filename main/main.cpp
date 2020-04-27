@@ -18,7 +18,7 @@ int main()
 	med a(ct[2], mask[2], lungmask[2]);
 
 	lung l(a);
-	imshow("up", l.down_lung);
+	l.drawhist("ss",0);
 
 
 
