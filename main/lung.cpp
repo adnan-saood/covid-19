@@ -12,8 +12,12 @@ lung::lung(med in)
 	up_lung = cv::min(in.ct, in.lungmask == 1);
 	down_lung = cv::min(in.ct, in.lungmask == 2);
 	both = cv::max(up_lung, down_lung);
+	cv::Rect up_rect, down_rect;
+	up_rect = boundingRect(in.lungmask == 1);
+	down_rect = boundingRect(in.lungmask == 2);
+	up_lung = cv::Mat(up_lung, up_rect);
+	down_lung = cv::Mat(down_lung, down_rect);
 	hist_computed = 0;
-
 }
 
 
@@ -46,29 +50,25 @@ Mat lung::otsu(int side)
 
 Mat lung::thresholded_globally(int side)
 {
+	Mat ans;
+	int t = 0;
 	if (side == 1)
-	{
-		Mat ans;
-		cv::adaptiveThreshold(this->up_lung, ans, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
-		return ans;
-	}
+		t = thresh_globally(this->up_lung, &ans);
 	else if (side == 2)
-	{
-		Mat ans;
-		cv::adaptiveThreshold(this->down_lung, ans, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
-		return ans;
-	}
-	else 
-	{
-		Mat ans;
-		cv::adaptiveThreshold(this->both, ans, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
-		return ans;
-	}
+		t = thresh_globally(this->down_lung, &ans);
+	else
+		t = thresh_globally(this->both, &ans);
+
+
+	Mat tata = this->drawhist("tata", side);
+	line(tata, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
+	imshow("tata", tata);
+	return ans;
 }
 
-int lung::thresh_globally(Mat in, Mat out)
+int lung::thresh_globally(Mat in, Mat* out)
 {
-	int T0 = cv::mean(in)[0];
+	int T0 = cv::mean(in,in)[0];
 	Mat temp1;
 	int dT = 255;
 	int T = T0;
@@ -76,14 +76,14 @@ int lung::thresh_globally(Mat in, Mat out)
 	{
 		threshold(in, temp1, T, 255, THRESH_BINARY);
 		Mat G1_mask = (temp1 == Mat::zeros(temp1.size(), 0));
-		Mat G2_mask = (temp1 == Mat::ones(temp1.size(), 0) * 255);
-		int m1 = cv::mean(in, G1_mask)[0];
-		int m2 = cv::mean(in, G2_mask)[0];
+		Mat G2_mask = (temp1 == (Mat::ones(temp1.size(), 0) * 255));
+		int m1 = cv::mean(in, (G1_mask&in))[0];
+		int m2 = cv::mean(in, (G2_mask&in))[0];
 		int T_ = T;
 		T = (m1 + m2) / 2;
 		dT = abs(T - T_);
 	}
-	threshold(in, temp1, T, 255, THRESH_BINARY);
+	threshold(in, *out, T, 255, THRESH_BINARY);
 	return T;
 
 }
@@ -112,14 +112,17 @@ vector<unsigned long long> lung::histogram(int side)
 	}
 
 	for (int y = 0; y < this->both.cols; y++)
-	{
 		for (int x = 0; x < this->both.rows; x++)
-		{
 			*(&histo_0[0] + this->both.at<uchar>(x, y)) += 1;
+
+	for (int y = 0; y < this->up_lung.cols; y++)
+		for (int x = 0; x < this->up_lung.rows; x++)
 			*(&histo_1[0] + this->up_lung.at<uchar>(x, y)) += 1;
+
+	for (int y = 0; y < this->down_lung.cols; y++)
+		for (int x = 0; x < this->down_lung.rows; x++)
 			*(&histo_2[0] + this->down_lung.at<uchar>(x, y)) += 1;
-		}
-	}
+
 	histo_0[0] = 0;
 	histo_1[0] = 0;
 	histo_2[0] = 0;
