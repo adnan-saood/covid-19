@@ -17,7 +17,7 @@ int main()
 
 	
 
-	int index = 76;
+	int index = 8;
 	blur(ct[index], ct[index], Size(5, 5));
 	med a(ct[index], mask[index], lungmask[index]);
 

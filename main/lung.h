@@ -32,6 +32,6 @@ private:
 	bool hist_computed;
 	vector<float> normalize_(vector<unsigned long long> in);
 	vector<unsigned long long> histogram(Mat in);
-
+	Mat histogram_img(vector<unsigned long long>);
 };
 

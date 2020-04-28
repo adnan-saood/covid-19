@@ -1,5 +1,5 @@
 #include "lung.h"
-
+#define OTSU_OVERLAY 1
 
 
 lung::lung()
@@ -154,7 +154,20 @@ int lung::thresh_otsu(Mat in, Mat* out)
 	K  /= num_max;
 
 	threshold(in, *out, K, 255, THRESH_BINARY);
-
+	if (OTSU_OVERLAY)
+	{
+		Mat otsu_overlayed = histogram_img(n);
+		for (int i = 0; i < 256; i++)
+		{
+			int sb = s_B[i];
+			if (sb <= 0)
+				sb = 0;
+			otsu_overlayed.at<Vec3b>(255 - (sb * 255.0 / s_B[K]), i)[0] = 0;
+			otsu_overlayed.at<Vec3b>(255 - (sb * 255.0 / s_B[K]), i)[1] = 0;
+			otsu_overlayed.at<Vec3b>(255 - (sb * 255.0 / s_B[K]), i)[2] = 255;
+		}
+		imshow("otsu_overlay", otsu_overlayed);
+	}
 	return K;
 }
 
@@ -262,4 +275,33 @@ cv::Mat lung::drawhist(String name, int side)
 	}
 	imshow(name, ans);
 	return ans;
+}
+
+
+Mat lung::histogram_img(vector<unsigned long long> hist)
+{
+	Mat ans = Mat(256, 256, CV_8UC3);
+	ans = Scalar(255,255,255);
+	long long max1 = 0;
+	for (int i = 0; i < 256; i++)
+	{
+		max1 = (hist[i] > max1 ? hist[i] : max1);
+	}
+	for (int i = 0; i < 256; i++)
+	{
+		double temp = hist[i] * 255.0 / max1;
+		hist[i] = temp;
+	}
+
+	for (int i = 0; i < 256; i++)
+	{
+		for (int j = 0; j <= hist[i]; j++)
+		{
+			ans.at<Vec3b>(255 - j, i)[0] = 0;
+			ans.at<Vec3b>(255 - j, i)[1] = 0;
+			ans.at<Vec3b>(255 - j, i)[2] = 0;
+		}
+	}
+	return ans;
+
 }
