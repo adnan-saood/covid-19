@@ -18,6 +18,7 @@ public:
 
 	Mat otsu(int side);
 	Mat thresholded_globally(int side);
+	Mat thresholded_otsu(int side);
 
 	vector<unsigned long long> histogram(int side);
 	cv::Mat drawhist(String name, int side);
@@ -26,8 +27,11 @@ public:
 	vector<unsigned long long> hist_down;
 	vector<unsigned long long> hist_both;
 	int thresh_globally(Mat in, Mat* out);
-
+	int lung::thresh_otsu(Mat in, Mat* out);
 private:
 	bool hist_computed;
+	vector<float> normalize_(vector<unsigned long long> in);
+	vector<unsigned long long> histogram(Mat in);
+
 };
 

@@ -66,6 +66,24 @@ Mat lung::thresholded_globally(int side)
 	return ans;
 }
 
+Mat lung::thresholded_otsu(int side)
+{
+	Mat ans;
+	int t = 0;
+	if (side == 1)
+		t = thresh_otsu(this->up_lung, &ans);
+	else if (side == 2)
+		t = thresh_otsu(this->down_lung, &ans);
+	else
+		t = thresh_otsu(this->both, &ans);
+
+
+	Mat tata = this->drawhist("tata", side);
+	line(tata, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
+	imshow("tata", tata);
+	return ans;
+}
+
 int lung::thresh_globally(Mat in, Mat* out)
 {
 	int T0 = cv::mean(in,in)[0];
@@ -88,7 +106,85 @@ int lung::thresh_globally(Mat in, Mat* out)
 
 }
 
+int lung::thresh_otsu(Mat in, Mat* out) 
+{
+	vector<unsigned long long> n = lung::histogram(in);
+	n[0] = 0; //disregard the 0 int.
 
+	//Step 1: normalized histogram
+	vector<float> p = normalize_(n);
+
+	//Step 2: cumulative sums
+	vector<float> P1(256);
+	P1[0] = 0;
+	for (int k = 1; k < 256; k++)
+	{
+		P1[k] = P1[k - 1] + p[k];
+	}
+
+	//Step 3: cumulative mean
+	vector<float> m(256);
+	m[0] = 0;
+	for (int k = 1; k < 256; k++)
+		m[k] = m[k - 1] + k*p[k];
+
+	//Step 4: global intensity mean
+	float mg = m[255];
+	
+	//Step 5: between class variance sigma
+	vector<float> s_B(256);
+	for (int k = 0; k < 256; k++)
+		s_B[k] = (float)(mg*P1[k] - m[k])*(mg*P1[k] - m[k]) 
+				 /(P1[k] * (1.0 - P1[k]));
+
+	//Step 6: optimal k
+	float max_k = 125;
+	for (int k = 0; k < 256; k++)
+		if (s_B[k] > s_B[max_k])
+			max_k = k;
+
+	int K = 0, num_max = 0; // k_star
+	for (int k = 0; k < 256; k++)
+	{
+		if (s_B[k] == s_B[max_k])
+		{
+			K += k; num_max += 1;
+		}
+	}
+	K  /= num_max;
+
+	threshold(in, *out, K, 255, THRESH_BINARY);
+
+	return K;
+}
+
+
+vector<float> lung::normalize_(vector<unsigned long long> in)
+{
+	vector<float> ans(256);
+	float MN = 0;
+	
+	for (int i = 0; i < 256; i++)
+		MN += in[i];
+
+	for (int i = 0; i < 256; i++)
+		ans[i] = (float)(in[i]* 1.0 / MN);
+
+	return ans;
+}
+
+vector<unsigned long long> lung::histogram(Mat in)
+{
+	vector<unsigned long long> hist(256);
+	for (int i = 0; i < 256; i++)
+		hist[i] = 0;
+
+	for (int i = 0; i < in.rows; i++)
+		for (int j = 0; j < in.cols; j++)
+			hist[in.at<uchar>(i, j)] += 1;
+
+	return hist;
+}
 vector<unsigned long long> lung::histogram(int side)
 {
 	if (hist_computed)

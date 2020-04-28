@@ -17,16 +17,18 @@ int main()
 
 	
 
-	int index = 89;
-
+	int index = 76;
+	blur(ct[index], ct[index], Size(5, 5));
 	med a(ct[index], mask[index], lungmask[index]);
 
 	lung l(a);
 	Mat te;
 
-	te = l.thresholded_globally(0);
 
-	imshow("aa", te);
+	te = l.thresholded_otsu(1);
+
+	imshow("otsu", te);
+
 	/*Mat s1;
 	s1 = Mat::ones(3, 3, 0) * 33;
 	s1.at<uchar>(1, 1) = 255;
