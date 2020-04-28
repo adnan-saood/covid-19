@@ -66,6 +66,27 @@ Mat lung::thresholded_globally(int side)
 	}
 }
 
+int lung::thresh_globally(Mat in, Mat out)
+{
+	int T0 = cv::mean(in)[0];
+	Mat temp1;
+	int dT = 255;
+	int T = T0;
+	while (dT > 5)
+	{
+		threshold(in, temp1, T, 255, THRESH_BINARY);
+		Mat G1_mask = (temp1 == Mat::zeros(temp1.size(), 0));
+		Mat G2_mask = (temp1 == Mat::ones(temp1.size(), 0) * 255);
+		int m1 = cv::mean(in, G1_mask)[0];
+		int m2 = cv::mean(in, G2_mask)[0];
+		int T_ = T;
+		T = (m1 + m2) / 2;
+		dT = abs(T - T_);
+	}
+	threshold(in, temp1, T, 255, THRESH_BINARY);
+	return T;
+
+}
 
 
 vector<unsigned long long> lung::histogram(int side)
@@ -99,6 +120,9 @@ vector<unsigned long long> lung::histogram(int side)
 			*(&histo_2[0] + this->down_lung.at<uchar>(x, y)) += 1;
 		}
 	}
+	histo_0[0] = 0;
+	histo_1[0] = 0;
+	histo_2[0] = 0;
 	this->hist_computed = true;
 	this->hist_both = histo_0;
 	this->hist_up = histo_1;

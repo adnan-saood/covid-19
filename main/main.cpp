@@ -15,13 +15,16 @@ int main()
 	lungmask.load_entire_set();
 	lungmask.load_entire_set_as_string();
 
-	med a(ct[2], mask[2], lungmask[2]);
+	med a(ct[5], mask[5], lungmask[5]);
 
 	lung l(a);
-	l.drawhist("ss",0);
+	Mat te;
 
+	l.thresh_globally(ct[5], te);
 
 
 	waitKey();
+	system("pause");
+
 	return 0;
 }

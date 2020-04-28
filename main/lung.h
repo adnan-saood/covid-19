@@ -25,6 +25,7 @@ public:
 	vector<unsigned long long> hist_up;
 	vector<unsigned long long> hist_down;
 	vector<unsigned long long> hist_both;
+	int thresh_globally(Mat in, Mat out);
 
 private:
 	bool hist_computed;
