@@ -1,6 +1,8 @@
 #include "lung.h"
 #define OTSU_OVERLAY 1
 
+#define vis 1
+
 
 lung::lung()
 {
@@ -9,46 +11,50 @@ lung::lung()
 
 lung::lung(med in)
 {
-	up_lung = cv::min(in.ct, in.lungmask == 1);
-	down_lung = cv::min(in.ct, in.lungmask == 2);
+	Mat temp;
+	erode(in.lungmask, temp, Mat::ones(10, 10, 0));
+	up_lung = cv::min(in.ct, temp == 1);
+	down_lung = cv::min(in.ct, temp == 2);
 	both = cv::max(up_lung, down_lung);
 	cv::Rect up_rect, down_rect;
-	up_rect = boundingRect(in.lungmask == 1);
-	down_rect = boundingRect(in.lungmask == 2);
+	up_rect = boundingRect(temp == 1);
+	down_rect = boundingRect(temp == 2);
 	up_lung = cv::Mat(up_lung, up_rect);
 	down_lung = cv::Mat(down_lung, down_rect);
 	hist_computed = 0;
 }
 
-
 lung::~lung()
 {
+	up_lung.release();
+	down_lung.release();
+	both.release();
 }
 
-
-Mat lung::otsu(int side)
+Mat lung::im(int side)
 {
-	if (side == 1)
+	switch (side)
 	{
-		Mat ans;
-		cv::threshold(this->up_lung, ans, 0, 255, THRESH_OTSU);
-		return ans;
-	}
-	else if (side == 2)
-	{
-		Mat ans;
-		cv::threshold(this->down_lung, ans, 0, 255, THRESH_OTSU);
-		return ans;
-	}
-	else
-	{
-		Mat ans;
-		cv::threshold(this->both, ans, 0, 255, THRESH_OTSU);
-		return ans;
+	case 0: return this->both;
+	case 1: return this->up_lung;
+	case 2: return this->down_lung;
+	default:
+		return Mat::zeros(2, 2, 0);
 	}
 }
 
-Mat lung::thresholded_globally(int side)
+/*
+
+auto student0 = get_student(0);
+std::cout << "ID: 0, "
+<< "GPA: " << std::get<0>(student0) << ", "
+<< "grade: " << std::get<1>(student0) << ", "
+<< "name: " << std::get<2>(student0) << '\n';
+
+*/
+
+
+tuple <Mat, Mat> lung::thresholded_globally(int side)
 {
 	Mat ans;
 	int t = 0;
@@ -60,13 +66,14 @@ Mat lung::thresholded_globally(int side)
 		t = thresh_globally(this->both, &ans);
 
 
-	Mat tata = this->drawhist("tata", side);
-	line(tata, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
-	imshow("tata", tata);
-	return ans;
+	Mat visual = this->drawhist("tata", side);
+	line(visual, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
+	imshow("tata", visual);
+
+	return std::make_tuple(ans, visual);
 }
 
-Mat lung::thresholded_otsu(int side)
+tuple <Mat, Mat> lung::thresholded_otsu(int side)
 {
 	Mat ans;
 	int t = 0;
@@ -78,17 +85,17 @@ Mat lung::thresholded_otsu(int side)
 		t = thresh_otsu(this->both, &ans);
 
 
-	Mat tata = this->drawhist("tata", side);
-	line(tata, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
-	imshow("tata", tata);
-	return ans;
+	Mat visual = this->drawhist("tata", side);
+	line(visual, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
+	imshow("tata", visual);
+	
+	return std::make_tuple(ans, visual);
 }
 
-
-Mat lung::thresholded_multi_otsu(int side)
+tuple <Mat, Mat> lung::thresholded_multi_otsu(int side)
 {
 	Mat ans;
-	int* t;
+	vector<int> t;
 	if (side == 1)
 		t = thresh_multi_otsu(this->up_lung, &ans);
 	else if (side == 2)
@@ -96,8 +103,13 @@ Mat lung::thresholded_multi_otsu(int side)
 	else
 		t = thresh_multi_otsu(this->both, &ans);
 
-
-	return ans;
+	Mat visual = this->drawhist("tata", side);
+	for (int i = 0; i < t.size(); i++)
+	{
+		line(visual, cv::Point(t[i], 0), cv::Point(t[i], 255), Scalar(128));
+	}
+	
+	return std::make_tuple(ans, visual);
 }
 
 int lung::thresh_globally(Mat in, Mat* out)
@@ -187,7 +199,7 @@ int lung::thresh_otsu(Mat in, Mat* out)
 	return K;
 }
 
-int* lung::thresh_multi_otsu(Mat in, Mat* out)
+vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 {
 	vector<unsigned long long> n = lung::histogram(in);
 	n[0] = 0; //disregard the 0 int.
@@ -207,16 +219,16 @@ int* lung::thresh_multi_otsu(Mat in, Mat* out)
 	}
 
 	vector<int> K(5);
-	int* max_K = new int[3];
+	vector<int> max_K(3);
 	K[0] = 0;
 	K[4] = 255;
 	float max_s_B = -1;
-	for (int a = 1; a < 254; a++)
+	for (int a = 1; a < 125; a+=4)
 	{
 		cout << a << endl;
-		for (int b = a; b < 255; b++)
+		for (int b = 126; b < 175; b+=4)
 		{
-			for (int c = b; c < 256; c++)
+			for (int c = 176; c < 256; c+=2)
 			{
 				K[1] = a;
 				K[2] = b;
@@ -268,11 +280,9 @@ int* lung::thresh_multi_otsu(Mat in, Mat* out)
 	}
 	
 	*out = ans;
-	imshow("ans",ans);
+	imshow("ans", ans);
 	return max_K;
 }
-
-
 
 vector<float> lung::normalize_(vector<unsigned long long> in)
 {
@@ -300,6 +310,7 @@ vector<unsigned long long> lung::histogram(Mat in)
 
 	return hist;
 }
+
 vector<unsigned long long> lung::histogram(int side)
 {
 	if (hist_computed)
@@ -375,10 +386,8 @@ cv::Mat lung::drawhist(String name, int side)
 			ans.at<uchar>(255 - j, i) = 0;
 		}
 	}
-	imshow(name, ans);
 	return ans;
 }
-
 
 Mat lung::histogram_img(vector<unsigned long long> hist)
 {

@@ -13,17 +13,18 @@ int main()
 
 	imglist lungmask(100, data_dir + "tr_lungmasks\\", "tr_lungmasks_updated_z", "png");
 	lungmask.load_entire_set();
-	lungmask.load_entire_set_as_string();
 
 	
 
-	int index = 8;
+	int index = 1;
 	blur(ct[index], ct[index], Size(5, 5));
 	med a(ct[index], mask[index], lungmask[index]);
 
 	lung l(a);
 	Mat te;
-	l.thresh_multi_otsu(ct[2], &te);
+	imshow("aa",std::get<1>(l.thresholded_multi_otsu(1)));
+	
+
 
 	waitKey();
 	
