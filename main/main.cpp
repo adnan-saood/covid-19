@@ -23,27 +23,7 @@ int main()
 
 	lung l(a);
 	Mat te;
-
-
-	te = l.thresholded_otsu(1);
-
-	imshow("otsu", te);
-
-	/*Mat s1;
-	s1 = Mat::ones(3, 3, 0) * 33;
-	s1.at<uchar>(1, 1) = 255;
-	cout << "s1 = \n" << s1 << endl;
-	Mat s2 = Mat::zeros(3, 3, 0);
-	s2.at<uchar>(1, 1) = 1;
-	s2.at<uchar>(2, 1) = 1;
-	cout << "s2 & s1 = \n" << (s1&s2) << endl;
-	cout << "s2 & s1 = \n" << (s1.mul(s2)) << endl;
-
-	cout << "mean(s1) = " << cv::mean(s1) << endl;
-	cout << "mean(s2) = " << cv::mean(s1, s2) << endl;
-
-	*/
-	//system("pause");
+	l.thresh_multi_otsu(ct[2], &te);
 
 	waitKey();
 	

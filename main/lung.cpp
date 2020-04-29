@@ -84,6 +84,22 @@ Mat lung::thresholded_otsu(int side)
 	return ans;
 }
 
+
+Mat lung::thresholded_multi_otsu(int side)
+{
+	Mat ans;
+	int* t;
+	if (side == 1)
+		t = thresh_multi_otsu(this->up_lung, &ans);
+	else if (side == 2)
+		t = thresh_multi_otsu(this->down_lung, &ans);
+	else
+		t = thresh_multi_otsu(this->both, &ans);
+
+
+	return ans;
+}
+
 int lung::thresh_globally(Mat in, Mat* out)
 {
 	int T0 = cv::mean(in,in)[0];
@@ -170,6 +186,92 @@ int lung::thresh_otsu(Mat in, Mat* out)
 	}
 	return K;
 }
+
+int* lung::thresh_multi_otsu(Mat in, Mat* out)
+{
+	vector<unsigned long long> n = lung::histogram(in);
+	n[0] = 0; //disregard the 0 int.
+
+    //Step 1: normalized histogram
+	vector<float> p = normalize_(n);
+	//N is number of classes
+	float mg;
+	{
+		vector<float> m(256);
+		m[0] = 0;
+		for (int k = 1; k < 256; k++)
+			m[k] = m[k - 1] + k*p[k];
+
+		//Step 4: global intensity mean
+		mg = m[255];
+	}
+
+	vector<int> K(5);
+	int* max_K = new int[3];
+	K[0] = 0;
+	K[4] = 255;
+	float max_s_B = -1;
+	for (int a = 1; a < 254; a++)
+	{
+		cout << a << endl;
+		for (int b = a; b < 255; b++)
+		{
+			for (int c = b; c < 256; c++)
+			{
+				K[1] = a;
+				K[2] = b;
+				K[3] = c;
+				
+				float* P = new float[4];
+				for (int i = 0; i < 4; i++)
+				{
+					P[i] = 0;
+					for (int j = K[i]; j <= K[i + 1]; j++)
+					{
+						P[i] += p[j];
+					}
+				}
+				float* m = new float[4];
+				for (int i = 0; i < 4; i++)
+				{
+					m[i] = 0;
+					for (int j = K[i]; j <= K[i + 1]; j++)
+					{
+						m[i] += 1.0 / P[i] * j*p[j];
+					}
+				}
+
+				float s_B = 0;
+				for (int i = 0; i < 4; i++)
+				{
+					s_B += P[i] * (m[i] - mg)*(m[i] - mg);
+				}
+				if (s_B > max_s_B)
+				{
+					max_s_B = s_B;
+					max_K[0] = K[1];
+					max_K[1] = K[2];
+					max_K[2] = K[3];
+				}
+			}
+		}
+	}
+	Mat ans;
+	ans.create(in.size(), in.type());
+	ans = Scalar(0);
+	for (int i = 0; i < 3; i++)
+	{
+		Mat temp;
+		int thresh = max_K[i];
+		threshold(in, temp, thresh, (i + 1) * 85,THRESH_BINARY);
+		ans = cv::max(temp,ans);
+	}
+	
+	*out = ans;
+	imshow("ans",ans);
+	return max_K;
+}
+
 
 
 vector<float> lung::normalize_(vector<unsigned long long> in)
