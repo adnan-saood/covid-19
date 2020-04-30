@@ -15,6 +15,8 @@ public:
 	void do_stuff(); // delete later
 	void predict();
 
+	void do_thresholding();
+
 
 	void save_histogram_imgs();
 	void save_threshholded_imgs();
@@ -51,7 +53,8 @@ private:
 	void save_imgs(Mat * in, String file_name);
 
 
-	void do_global_threh();
+	void do_global_thresh();
+	void do_otsu_thresh();
 
 
 	String result_path = PRED_RES_PATH;

@@ -14,7 +14,6 @@ prediction::prediction(imglist ct, imglist mask, imglist lungmask, int method)
 	this->mask = mask;
 	this->lungmask = lungmask;
 	this->n = ct.n;
-
 }
 
 prediction::~prediction()
@@ -28,13 +27,25 @@ void prediction::predict()
 	construct_lungs();
 	calculate_histograms();
 	costruct_histogram_imgs();
-	do_global_threh();
+	do_global_thresh();
+	save_results_as_imgs();
 
 }
 
+void prediction::do_thresholding()
+{
+	if (method = PRED_GLOBAL_THRESH)
+		do_global_thresh();
+	else if (method = PRED_GLOBAL_OTSU)
+		do_otsu_thresh();
+	else if (method = PRED_MULTI_OTSU)
+		cout << "nan";
+	else
+		cout << "WRONG FUCKTARD!!";
+}
 
 
-void prediction::do_global_threh()
+void prediction::do_global_thresh()
 {
 	histogram_imgs_0 = new Mat[n];
 	thresh_img_0 = new Mat[n];
@@ -50,7 +61,21 @@ void prediction::do_global_threh()
 	}
 }
 
+void prediction::do_otsu_thresh()
+{
+	histogram_imgs_0 = new Mat[n];
+	thresh_img_0 = new Mat[n];
 
+	for (int i = 0; i < n; i++)
+	{
+		auto global_0 = lungs[i].thresholded_otsu(0);
+
+		thresh_img_0[i] = std::get<0>(global_0);
+		histogram_imgs_0[i] = std::get<1>(global_0);
+		if (DEBUG)
+			cout << "OTSU Prediction at: " << i << endl;
+	}
+}
 
 
 
@@ -87,6 +112,7 @@ void prediction::costruct_histogram_imgs()
 	{
 		histogram_imgs_0[i] = lungs[i].drawhist(0);
 	}
+
 	if (DEBUG)
 		cout << "Histogram images constructed" << endl;
 }

@@ -14,7 +14,9 @@ lung::lung(med in)
 	Mat temp;
 	erode(in.lungmask, temp, Mat::ones(10, 10, 0));
 	up_lung = cv::min(in.ct, temp == 1);
+	cv::blur(up_lung, up_lung, Size(PRE_BLUR, PRE_BLUR));
 	down_lung = cv::min(in.ct, temp == 2);
+	cv::blur(down_lung, down_lung, Size(PRE_BLUR, PRE_BLUR));
 	both = cv::max(up_lung, down_lung);
 	cv::Rect up_rect, down_rect;
 	up_rect = boundingRect(temp == 1);
@@ -67,9 +69,7 @@ tuple <Mat, Mat> lung::thresholded_globally(int side)
 
 
 	Mat visual = this->drawhist(side);
-	line(visual, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
-	imshow("tata", visual);
-
+	line(visual, cv::Point(t, 0), cv::Point(t, 255), Scalar(128), LINE_WIDTH);
 	return std::make_tuple(ans, visual);
 }
 
@@ -87,8 +87,6 @@ tuple <Mat, Mat> lung::thresholded_otsu(int side)
 
 	Mat visual = this->drawhist(side);
 	line(visual, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
-	imshow("tata", visual);
-	
 	return std::make_tuple(ans, visual);
 }
 
@@ -106,7 +104,7 @@ tuple <Mat, Mat> lung::thresholded_multi_otsu(int side)
 	Mat visual = this->drawhist(side);
 	for (int i = 0; i < t.size(); i++)
 	{
-		line(visual, cv::Point(t[i], 0), cv::Point(t[i], 255), Scalar(128));
+		line(visual, cv::Point(t[i], 0), cv::Point(t[i], 255), Scalar(128), LINE_WIDTH);
 	}
 	
 	return std::make_tuple(ans, visual);

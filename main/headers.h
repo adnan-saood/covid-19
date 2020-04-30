@@ -12,3 +12,6 @@ using namespace cv;
 using namespace std;
 
 
+
+#define LINE_WIDTH 2
+#define PRE_BLUR 5

@@ -16,9 +16,7 @@ int main()
 	imglist lungmask(100, data_dir + "tr_lungmasks\\", "tr_lungmasks_updated_z", "png");
 	lungmask.load_entire_set();
 
-	prediction please(ct, mask, lungmask, 0);
-	please.predict();
-
+	
 	system("pause");
 
 
