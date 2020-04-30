@@ -17,7 +17,7 @@ int main()
 	lungmask.load_entire_set();
 
 	prediction please(ct, mask, lungmask, 0);
-	please.do_stuff();
+	please.predict();
 
 	system("pause");
 
