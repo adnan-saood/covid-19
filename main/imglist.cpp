@@ -1,6 +1,10 @@
 #include "imglist.h"
 #include "headers.h"
 
+imglist::imglist()
+{
+
+}
 
 imglist::imglist(int num, String dirc, String base_name, String file_type)
 {

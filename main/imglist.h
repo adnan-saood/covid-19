@@ -5,6 +5,7 @@
 class imglist
 {
 public:
+	imglist();
 	imglist(int n, String dir, String base_name, String file_type);
 	void set_base_string(String s);
 	int load_entire_set(); // load in list Mat files

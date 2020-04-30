@@ -66,7 +66,7 @@ tuple <Mat, Mat> lung::thresholded_globally(int side)
 		t = thresh_globally(this->both, &ans);
 
 
-	Mat visual = this->drawhist("tata", side);
+	Mat visual = this->drawhist(side);
 	line(visual, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
 	imshow("tata", visual);
 
@@ -85,7 +85,7 @@ tuple <Mat, Mat> lung::thresholded_otsu(int side)
 		t = thresh_otsu(this->both, &ans);
 
 
-	Mat visual = this->drawhist("tata", side);
+	Mat visual = this->drawhist(side);
 	line(visual, cv::Point(t, 0), cv::Point(t, 255), Scalar(128));
 	imshow("tata", visual);
 	
@@ -103,7 +103,7 @@ tuple <Mat, Mat> lung::thresholded_multi_otsu(int side)
 	else
 		t = thresh_multi_otsu(this->both, &ans);
 
-	Mat visual = this->drawhist("tata", side);
+	Mat visual = this->drawhist(side);
 	for (int i = 0; i < t.size(); i++)
 	{
 		line(visual, cv::Point(t[i], 0), cv::Point(t[i], 255), Scalar(128));
@@ -361,7 +361,7 @@ vector<unsigned long long> lung::histogram(int side)
 
 }
 
-cv::Mat lung::drawhist(String name, int side)
+cv::Mat lung::drawhist(int side)
 {
 	vector<unsigned long long> hist;
 	hist = this->histogram(side);

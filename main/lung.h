@@ -16,8 +16,8 @@ public:
 	tuple <Mat, Mat> thresholded_otsu(int side);
 	tuple <Mat, Mat> thresholded_multi_otsu(int side);
 
-	vector<unsigned long long> histogram(int side);
-	cv::Mat drawhist(String name, int side);
+	vector<unsigned long long> histogram(int side = 0);
+	cv::Mat drawhist(int side);
 
 	Mat im(int side);
 private:
