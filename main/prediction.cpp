@@ -14,36 +14,52 @@ prediction::prediction(imglist ct, imglist mask, imglist lungmask, int method)
 	this->mask = mask;
 	this->lungmask = lungmask;
 	this->n = ct.n;
+
+	construct_lungs();
+	calculate_histograms();
+	construct_global_masks();
 }
 
 prediction::~prediction()
 {
 }
 
-
 void prediction::predict()
 {
+	do_thresholding();
+	result__2ch = new Mat[n];
 	
-	construct_lungs();
-	calculate_histograms();
-	costruct_histogram_imgs();
-	do_global_thresh();
-	save_results_as_imgs();
+	for (int i = 0; i < n; i++)
+	{
+		vector<Mat> temp;
+		{
+			temp.push_back(thresh_img_0[i]);
+			temp.push_back(Mat::zeros(global_masks_0[i].size(), 0));
+			temp.push_back(global_masks_0[i]); 
+		}
+		cv::merge(temp, result__2ch[i]);
+		imshow("res", result__2ch[i]);
+		imshow("global_mask", global_masks_0[i]);
+		imshow("thresh", thresh_img_0[i]);
+		waitKey();
+	}
 
 }
 
+
+
+
 void prediction::do_thresholding()
 {
-	if (method = PRED_GLOBAL_THRESH)
+	if (method == PRED_GLOBAL_THRESH)
 		do_global_thresh();
-	else if (method = PRED_GLOBAL_OTSU)
+	else if (method == PRED_GLOBAL_OTSU)
 		do_otsu_thresh();
-	else if (method = PRED_MULTI_OTSU)
+	else if (method == PRED_MULTI_OTSU)
 		cout << "nan";
 	else
 		cout << "WRONG FUCKTARD!!";
 }
-
 
 void prediction::do_global_thresh()
 {
@@ -77,8 +93,10 @@ void prediction::do_otsu_thresh()
 	}
 }
 
+void prediction::do_multi_otsu_thresh()
+{
 
-
+}
 
 void prediction::calculate_histograms()
 {
@@ -117,6 +135,17 @@ void prediction::costruct_histogram_imgs()
 		cout << "Histogram images constructed" << endl;
 }
 
+void prediction::construct_global_masks()
+{
+	global_masks_0 = new Mat[n];
+	for (int i = 0; i < n; i++)
+	{
+		Mat temp;
+		threshold(mask[i], temp, 4, 255, THRESH_BINARY);
+		global_masks_0[i] = temp;
+	}
+}
+
 void prediction::save_imgs(Mat * in, String path)
 {
 
@@ -152,6 +181,31 @@ void prediction::save_histogram_imgs()
 
 }
 
+void prediction::save_masked_lungs_imgs()
+{
+
+
+	string temp_path = result_path
+		+ MASKED_LUNGS_IMGS_FOLDER
+		+ to_string(method)
+		+ "\\" + "h0\\";
+
+	temp_path += MASKED_LUNGS_IMGS_NAME;
+	save_imgs(masked_lungs_0, temp_path);
+	if (DEBUG)
+		cout << "Masked lungs images saved in:\n" << temp_path << endl;
+
+}
+
+void prediction::construct_masked()
+{
+	masked_lungs_0 = new Mat[n];
+	for (int i = 0; i < n; i++)
+	{
+		masked_lungs_0[i] = lungs[i].both;
+	}
+}
+
 void prediction::save_threshholded_imgs()
 {
 	string temp_path = result_path
@@ -178,6 +232,7 @@ void prediction::do_stuff()
 	construct_lungs();
 	calculate_histograms();
 	costruct_histogram_imgs();
-	save_histogram_imgs();
+	construct_masked();
+	save_masked_lungs_imgs();
 }
 

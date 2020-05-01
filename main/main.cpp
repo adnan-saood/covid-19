@@ -16,8 +16,38 @@ int main()
 	imglist lungmask(100, data_dir + "tr_lungmasks\\", "tr_lungmasks_updated_z", "png");
 	lungmask.load_entire_set();
 
+
+	Mat thresh, his;
+	int index = 99;
+	med m(ct[index], mask[index], lungmask[index]);
+	lung l(m);
+
+	prediction pr(ct, mask, lungmask, 0 );
+
+	pr.predict();
+
+	/*auto global_ = l.thresholded_globally(0);
+	thresh = std::get<0>(global_);
+	his = std::get<1>(global_);
+	imshow("thresh", thresh);
+	imshow("histogram", his);
+	imshow("mask", m.mask);*/
+
+	waitKey();
+
+
+
+
+
+
+
+
+
+
+
+
 	
-	system("pause");
+	//system("pause");
 
 
 	/*

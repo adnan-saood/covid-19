@@ -12,7 +12,7 @@ lung::lung()
 lung::lung(med in)
 {
 	Mat temp;
-	erode(in.lungmask, temp, Mat::ones(10, 10, 0));
+	erode(in.lungmask, temp, Mat::ones(1, 1, 0));
 	up_lung = cv::min(in.ct, temp == 1);
 	cv::blur(up_lung, up_lung, Size(PRE_BLUR, PRE_BLUR));
 	down_lung = cv::min(in.ct, temp == 2);
@@ -221,12 +221,12 @@ vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 	K[0] = 0;
 	K[4] = 255;
 	float max_s_B = -1;
-	for (int a = 1; a < 125; a+=4)
+	for (int a = 1; a < 110; a+=5)
 	{
 		cout << a << endl;
-		for (int b = 126; b < 175; b+=4)
+		for (int b = a; b < 200; b+=5)
 		{
-			for (int c = 176; c < 256; c+=2)
+			for (int c = b; c < 256; c+=5)
 			{
 				K[1] = a;
 				K[2] = b;
@@ -278,7 +278,6 @@ vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 	}
 	
 	*out = ans;
-	imshow("ans", ans);
 	return max_K;
 }
 

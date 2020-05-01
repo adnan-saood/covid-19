@@ -20,12 +20,15 @@ public:
 	cv::Mat drawhist(int side);
 
 	Mat im(int side);
-private:
 
-	bool hist_computed;
 	Mat up_lung; //I = 1
 	Mat down_lung; //I = 2
 	Mat both;
+
+private:
+
+	bool hist_computed;
+
 
 	vector<unsigned long long> hist_up;
 	vector<unsigned long long> hist_down;
