@@ -16,7 +16,6 @@ prediction::prediction(imglist ct, imglist mask, imglist lungmask, int method)
 	this->n = ct.n;
 
 	construct_lungs();
-	calculate_histograms();
 	construct_global_masks();
 }
 
@@ -56,7 +55,7 @@ void prediction::do_thresholding()
 	else if (method == PRED_GLOBAL_OTSU)
 		do_otsu_thresh();
 	else if (method == PRED_MULTI_OTSU)
-		cout << "nan";
+		do_multi_otsu_thresh();
 	else
 		cout << "WRONG FUCKTARD!!";
 }
@@ -89,13 +88,32 @@ void prediction::do_otsu_thresh()
 		thresh_img_0[i] = std::get<0>(global_0);
 		histogram_imgs_0[i] = std::get<1>(global_0);
 		if (DEBUG)
+		{
 			cout << "OTSU Prediction at: " << i << endl;
+		}
+
 	}
 }
 
 void prediction::do_multi_otsu_thresh()
 {
+	histogram_imgs_0 = new Mat[n];
+	thresh_img_0 = new Mat[n];
+	for (int i = 0; i < n; i++)
+	{
+		auto global_0 = lungs[i].thresholded_multi_otsu(0);
 
+		thresh_img_0[i] = std::get<0>(global_0);
+		histogram_imgs_0[i] = std::get<1>(global_0);
+		if (DEBUG)
+		{
+			cout << "Multi-OTSU Prediction at: " << i << endl;
+			imshow("threshed at: i=" + to_string(i), thresh_img_0[i]);
+			imshow("Hist at: i=" + to_string(i), histogram_imgs_0[i]);
+			waitKey();
+			destroyAllWindows();
+		}
+	}
 }
 
 void prediction::calculate_histograms()
@@ -140,9 +158,10 @@ void prediction::construct_global_masks()
 	global_masks_0 = new Mat[n];
 	for (int i = 0; i < n; i++)
 	{
-		Mat temp;
-		threshold(mask[i], temp, 4, 255, THRESH_BINARY);
-		global_masks_0[i] = temp;
+		global_masks_0[i] = mask[i];
+		if (this->method == PRED_MULTI_OTSU)
+			return;
+		threshold(mask[i], global_masks_0[i], 4, 255, THRESH_BINARY);	
 	}
 }
 

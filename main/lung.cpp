@@ -224,15 +224,15 @@ vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 	for (int a = 1; a < 110; a+=5)
 	{
 		cout << a << endl;
-		for (int b = a; b < 200; b+=5)
+		for (int b = a; b < 240; b+=5)
 		{
-			for (int c = b; c < 256; c+=5)
+			for (int c = b; c < 256; c+=10)
 			{
 				K[1] = a;
 				K[2] = b;
 				K[3] = c;
 				
-				float* P = new float[4];
+				float* P = new float[4]; //10.3-22
 				for (int i = 0; i < 4; i++)
 				{
 					P[i] = 0;
@@ -241,13 +241,13 @@ vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 						P[i] += p[j];
 					}
 				}
-				float* m = new float[4];
+				float* m = new float[4]; //10.3-23
 				for (int i = 0; i < 4; i++)
 				{
 					m[i] = 0;
 					for (int j = K[i]; j <= K[i + 1]; j++)
 					{
-						m[i] += 1.0 / P[i] * j*p[j];
+						m[i] += 1.0 / P[i] * (float)j*p[j];
 					}
 				}
 

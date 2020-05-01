@@ -22,7 +22,7 @@ int main()
 	med m(ct[index], mask[index], lungmask[index]);
 	lung l(m);
 
-	prediction pr(ct, mask, lungmask, 0 );
+	prediction pr(ct, mask, lungmask, 2);
 
 	pr.predict();
 
