@@ -97,10 +97,10 @@ void prediction::validate_multi()
 	confusion = new Mat[n];
 	for (int i = 0; i < n; i++)
 	{
-		int true_positive = 0;
-		int false_positive = 0;
-		int true_negative = 0;
-		int false_negative = 0;
+		long true_positive[4] = { 0 ,0 ,0 ,0 };
+		long false_positive[4] = { 0 ,0 ,0 ,0 };
+		long true_negative[4] = { 0 ,0 ,0 ,0 };
+		long false_negative[4] = { 0 ,0 ,0 ,0 };
 		Mat temp = result__2ch[i];
 		for (int r = 0; r < temp.rows; r++)
 		{
@@ -109,22 +109,44 @@ void prediction::validate_multi()
 				int a = temp.at<Vec3b>(r, c)[MASK_CH];
 				int b = temp.at<Vec3b>(r, c)[PRED_CH];
 				if (a == b)
-					if (a > 0)
-						true_positive++;
+				{
+					if (a == 0)
+					{
+						true_negative[0]++;
+						true_negative[1]++;
+						true_negative[2]++;
+						true_negative[3]++;
+					}
 					else
-						true_negative++;
+						true_positive[a / C1]++;
+				}
 				else
-					if (a > 0)
-						false_negative++;
-					else
-						false_positive++;
+				{
+					if (a == 0)
+					{
+						false_positive[b / C1]++;
+					}
+					if (b == 0)
+					{
+						false_negative[a / C1]++;;
+					}
+					if (a != 0 && b != 0)
+					{
+						false_negative[b / C1]++;
+						false_positive[a / C1]++;
+					}
+				}
+
 			}
 		}
-		confusion[i].create(Size(2, 2), CV_32F);
-		confusion[i].at<float>TP = true_positive;
-		confusion[i].at<float>FN = false_negative;
-		confusion[i].at<float>FP = false_positive;
-		confusion[i].at<float>TN = true_negative - lungs[i].histogram(0)[0]; //disregard the shit around lungs
+		confusion[i].create(Size(2, 2), CV_32FC4);
+		for (int iter = 0; i < 4; iter++)
+		{
+			confusion[i].at<Vec4f>TP[iter] = true_positive[iter];
+			confusion[i].at<Vec4f>FN[iter] = false_negative[iter];
+			confusion[i].at<Vec4f>FP[iter] = false_positive[iter];
+			confusion[i].at<Vec4f>TN[iter] = true_negative[iter] - lungs[i].histogram(0)[0]; //disregard the shit around lungs
+		}
 
 	}
 }
@@ -135,13 +157,37 @@ void prediction::save_confusion_matrix_as_csv()
 	string temp;
 	temp = PRED_RES_PATH + string(CONFUSION_MAT_FILE_NAME);
 	file.open("hu.csv");
-	for (int i = 0; i < n; i++)
-	{
-		file << confusion[i].at<float>TP << ',';
-		file << confusion[i].at<float>FN << ',';
-		file << confusion[i].at<float>FP << ',';
-		file << confusion[i].at<float>TN << '\n';
-	}
+		if (this->method < 2)
+		{
+			for (int i = 0; i < n; i++)
+			{
+				file << confusion[i].at<float>TP << ',';
+				file << confusion[i].at<float>FN << ',';
+				file << confusion[i].at<float>FP << ',';
+				file << confusion[i].at<float>TN << '\n';
+			}
+		}
+		else
+		{
+			/////////////////////////////////////////////////////////////
+			////File is like this////////////////////////////////////////
+			//       C0             C1	           C2             C3
+			//   TP FN FP TN || TP FN FP TN || TP FN FP TN || TP FN FP TN
+			//   #  #  #  #  || #  #  #  #  || #  #  #  #  || #  #  #  #
+			//  ...
+			//
+			for (int i = 0; i < n; i++)
+			{
+				for (int iter = 0; iter < 4; iter++)
+				{
+					file << confusion[i].at<Vec4f>TP[iter] << ',';
+					file << confusion[i].at<Vec4f>FN[iter] << ',';
+					file << confusion[i].at<Vec4f>FP[iter] << ',';
+					file << confusion[i].at<Vec4f>TN[iter] << ',';
+				}
+				file << '\n';
+			}
+		}
 	file.close();
 }
 
