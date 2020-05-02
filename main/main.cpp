@@ -22,47 +22,17 @@ int main()
 	med m(ct[index], mask[index], lungmask[index]);
 	lung l(m);
 
-	prediction pr(ct, mask, lungmask, 2);
+	//prediction pr(ct, mask, lungmask, 2);
 
-	pr.predict();
+	//pr.predict();
 
-	/*auto global_ = l.thresholded_globally(0);
+	auto global_ = l.thresholded_globally(0);
 	thresh = std::get<0>(global_);
 	his = std::get<1>(global_);
 	imshow("thresh", thresh);
 	imshow("histogram", his);
-	imshow("mask", m.mask);*/
+	imshow("mask", m.mask);
 
 	waitKey();
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	//system("pause");
-
-
-	/*
-	int index = 1;
-	blur(ct[index], ct[index], Size(5, 5));
-	med a(ct[index], mask[index], lungmask[index]);
-
-	lung l(a);
-	Mat te;
-	imshow("aa",std::get<1>(l.thresholded_multi_otsu(1)));
-	*/
-
-
-	//waitKey();
-	
-
 	return 0;
 }

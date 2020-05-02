@@ -181,8 +181,6 @@ void prediction::validate_multi_2()
 				confusion[i].at<float>(pred, val)++;
 			}
 		}
-		
-		
 	}
 }
 
