@@ -45,14 +45,14 @@ private:
 
 
 
-	Mat* histogram_imgs_0;
-	Mat* thresh_img_0;
+	Mat * histogram_imgs_0;
+	Mat * thresh_img_0;
 
 	Mat * global_masks_0;
 
-	Mat* result__2ch;
+	Mat * result__2ch;
 
-
+	Mat * confusion;
 
 	void calculate_histograms();
 	void construct_lungs();
@@ -67,6 +67,8 @@ private:
 
 
 	void do_multi_otsu_thresh();
+
+	void validate_global();
 	
 };
 

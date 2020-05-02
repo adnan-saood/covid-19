@@ -32,9 +32,9 @@ void prediction::predict()
 	{
 		vector<Mat> temp;
 		{
-			temp.push_back(thresh_img_0[i]);
-			temp.push_back(Mat::zeros(global_masks_0[i].size(), 0));
-			temp.push_back(global_masks_0[i]); 
+			temp.push_back(thresh_img_0[i]); // B
+			temp.push_back(Mat::zeros(global_masks_0[i].size(), 0)); // G
+			temp.push_back(global_masks_0[i]); //R
 		}
 		cv::merge(temp, result__2ch[i]);
 		imshow("res", result__2ch[i]);
@@ -43,10 +43,48 @@ void prediction::predict()
 		waitKey();
 	}
 
+
+	validate_global();
+
 }
 
 
+void prediction::validate_global()
+{
+	int true_positive = 0;
+	int false_positive = 0;
+	int true_negative = 0;
+	int false_negative = 0;
+	confusion = new Mat[n];
+	for (int  i = 0; i < n; i++)
+	{
+		Mat temp = result__2ch[i];
+		for (int r = 0; r < temp.rows; r++)
+		{
+			for (int c = 0; c < temp.cols; c++)
+			{
+				int a = temp.at<Vec3b>(r, c)[MASK_CH];
+				int b = temp.at<Vec3b>(r, c)[PRED_CH];
+				if (a == b)
+					if (a > 0)
+						true_positive++;
+					else
+						true_negative++;
+				else
+					if (a > 0)
+						false_negative++;
+					else
+						false_positive++;
+			}
+		}
+		confusion[i].create(Size(2, 2), CV_32F);
+		confusion[i].at<float>TP = true_positive;
+		confusion[i].at<float>FN = false_negative;
+		confusion[i].at<float>FP = false_positive;
+		confusion[i].at<float>TN = true_negative;
+	}
 
+}
 
 void prediction::do_thresholding()
 {

@@ -17,3 +17,11 @@
 
 #define DEBUG 1
 
+#define MASK_CH 2
+#define PRED_CH 0
+
+
+#define TP (0, 0)
+#define FN (1, 0)
+#define FP (0, 1)
+#define TN (1, 1)
