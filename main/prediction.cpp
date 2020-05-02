@@ -99,57 +99,90 @@ void prediction::validate_multi()
 	confusion = new Mat[n];
 	for (int i = 0; i < n; i++)
 	{
-		long true_positive[4] = { 0 ,0 ,0 ,0 };
-		long false_positive[4] = { 0 ,0 ,0 ,0 };
-		long true_negative[4] = { 0 ,0 ,0 ,0 };
-		long false_negative[4] = { 0 ,0 ,0 ,0 };
+		vector<long>  true_positive(3, 0);
+		vector<long>  false_positive(3, 0);
+		vector<long>  true_negative(3, 0);
+		vector<long>  false_negative(3, 0);
+
 		Mat temp = result__2ch[i];
 		for (int r = 0; r < temp.rows; r++)
 		{
 			for (int c = 0; c < temp.cols; c++)
 			{
-				int a = temp.at<Vec3b>(r, c)[MASK_CH];
-				int b = temp.at<Vec3b>(r, c)[PRED_CH];
-				if (a == b)
+				int val = temp.at<Vec3b>(r, c)[MASK_CH];
+				int pred = temp.at<Vec3b>(r, c)[PRED_CH];
+				if (val == pred)
 				{
-					if (a == 0)
+					if (pred == 0)
 					{
-						true_negative[0]++; // error here fix by adding the true_negative to other classes cases.
+						true_negative[0]++;
 						true_negative[1]++;
 						true_negative[2]++;
-						true_negative[3]++;
 					}
 					else
-						true_positive[a / C1]++;
+						true_positive[(pred / C1) - 1]++;
 				}
 				else
 				{
-					if (a == 0)
+					if (val == 0)
 					{
-						false_positive[b / C1]++;
+						false_positive[pred / C1 - 1]++;
+						true_negative[(((pred / C1) + 1) - 1) % 3]++;
+						true_negative[(((pred / C1) + 2) - 1) % 3]++;
 					}
-					if (b == 0)
+					if (pred == 0)
 					{
-						false_negative[a / C1]++;;
+						false_negative[val / C1 - 1]++;
+						true_negative[(((pred / C1) + 1) - 1) % 3]++;
+						true_negative[(((pred / C1) + 2) - 1) % 3]++;
 					}
-					if (a != 0 && b != 0)
+					if ((val != 0) && (pred != 0))
 					{
-						false_negative[b / C1]++;
-						false_positive[a / C1]++;
+						false_positive[pred / C1 - 1]++;
+						false_negative[val / C1 - 1]++;
+						true_negative[(((pred / C1) + 1) - 1) % 3]++;
+						true_negative[(((pred / C1) + 2) - 1) % 3]++;
 					}
 				}
-
 			}
 		}
-		confusion[i].create(Size(2, 2), CV_32FC4);
-		for (int iter = 0; i < 4; iter++)
+		confusion[i].create(Size(2, 2), CV_32FC3);
+		for (int iter = 0; iter < 3; iter++)
 		{
-			confusion[i].at<Vec4f>TP[iter] = true_positive[iter]; // error here in iterator idk what is ?
-			confusion[i].at<Vec4f>FN[iter] = false_negative[iter];
-			confusion[i].at<Vec4f>FP[iter] = false_positive[iter];
-			confusion[i].at<Vec4f>TN[iter] = true_negative[iter] - lungs[i].histogram(0)[0]; //disregard the shit around lungs
+			confusion[i].at<Vec3f>TP[iter] = true_positive[iter]; // error here in iterator idk what is ?
+			confusion[i].at<Vec3f>FN[iter] = false_negative[iter];
+			confusion[i].at<Vec3f>FP[iter] = false_positive[iter];
+			confusion[i].at<Vec3f>TN[iter] = true_negative[iter] - lungs[i].histogram(0)[0]; //disregard the shit around lungs
 		}
 
+	}
+}
+
+void prediction::validate_multi_2()
+{
+
+	confusion = new Mat[n];
+	for (int i = 0; i < n; i++)
+	{
+		//			VAL
+		//PRED
+		//
+		//
+		//
+		confusion[i].create(Size(4, 4), CV_32F);
+		confusion[i] = Scalar(0);
+		Mat temp = result__2ch[i];
+		for (int r = 0; r < temp.rows; r++)
+		{
+			for (int c = 0; c < temp.cols; c++)
+			{
+				int val = temp.at<Vec3b>(r, c)[MASK_CH] / C1;
+				int pred = temp.at<Vec3b>(r, c)[PRED_CH] / C1;
+				confusion[i].at<float>(pred, val)++;
+			}
+		}
+		
+		
 	}
 }
 
@@ -173,19 +206,21 @@ void prediction::save_confusion_matrix_as_csv()
 		{
 			/////////////////////////////////////////////////////////////
 			////File is like this////////////////////////////////////////
-			//       C0             C1	           C2             C3
-			//   TP FN FP TN || TP FN FP TN || TP FN FP TN || TP FN FP TN
-			//   #  #  #  #  || #  #  #  #  || #  #  #  #  || #  #  #  #
+			//       C1             C2	           C3         
+			//   TP FN FP TN || TP FN FP TN || TP FN FP TN 
+			//   #  #  #  #  || #  #  #  #  || #  #  #  #  
 			//  ...
 			//
 			for (int i = 0; i < n; i++)
 			{
-				for (int iter = 0; iter < 4; iter++)
+				if (DEBUG)
+					cout << "At i = " << i << endl << confusion[i] << endl;
+				for (int r = 0; r < 4; r++)
 				{
-					file << confusion[i].at<Vec4f>TP[iter] << ',';
-					file << confusion[i].at<Vec4f>FN[iter] << ',';
-					file << confusion[i].at<Vec4f>FP[iter] << ',';
-					file << confusion[i].at<Vec4f>TN[iter] << ',';
+					for (int c = 0; c < 4; c++)
+					{
+						file << confusion[i].at<float>(r, c) << ',';
+					}
 				}
 				file << '\n';
 			}
@@ -211,7 +246,7 @@ void prediction::validate()
 	if (this->method < 2)
 		validate_global();
 	else
-		validate_multi();
+		validate_multi_2();
 }
 
 void prediction::do_global_thresh()
@@ -255,13 +290,12 @@ void prediction::do_multi_otsu_thresh()
 	thresh_img_0 = new Mat[n];
 	for (int i = 0; i < n; i++)
 	{
+		cout << "Multi-OTSU Prediction at: " << i << endl;
 		auto global_0 = lungs[i].thresholded_multi_otsu(0);
-
 		thresh_img_0[i] = std::get<0>(global_0);
 		histogram_imgs_0[i] = std::get<1>(global_0);
 		if (0)
 		{
-			cout << "Multi-OTSU Prediction at: " << i << endl;
 			imshow("threshed at: i=" + to_string(i), thresh_img_0[i]);
 			imshow("Hist at: i=" + to_string(i), histogram_imgs_0[i]);
 			waitKey();

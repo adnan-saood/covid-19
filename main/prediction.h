@@ -72,6 +72,7 @@ private:
 
 	void validate_global();
 	void validate_multi();
+	void validate_multi_2();
 	void save_confusion_matrix_as_csv();
 	
 };

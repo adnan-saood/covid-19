@@ -204,7 +204,7 @@ vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 
     //Step 1: normalized histogram
 	vector<float> p = normalize_(n);
-	//N is number of classes
+	
 	float mg;
 	{
 		vector<float> m(256);
@@ -212,21 +212,20 @@ vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 		for (int k = 1; k < 256; k++)
 			m[k] = m[k - 1] + k*p[k];
 
-		//Step 4: global intensity mean
 		mg = m[255];
 	}
 
-	vector<int> K(5);
-	vector<int> max_K(3);
-	K[0] = 0;
-	K[4] = 255;
+	vector<int> K(5); // Store threshold values 
+	vector<int> max_K(3); // optimal threshold where s_B is maximum.
+	K[0] = 0; // first threshold of 5 is the 0 threshold (nuts job)
+	K[4] = 255; // Last threshold of 5 is the 255 threshold (fucktard job)
 	float max_s_B = -1;
-	for (int a = 1; a < 110; a+=15)
+	for (int a = 1; a < 110; a+=30) //110 is arbitirary
 	{
-		cout << a << endl;
-		for (int b = a; b < 240; b+=15)
+		cout <<"-"<< a;
+		for (int b = a; b < 240; b+=30) //240 is arbitirary
 		{
-			for (int c = b; c < 256; c+=10)
+			for (int c = b; c < 256; c+=15) //256 is arbitirary
 			{
 				K[1] = a;
 				K[2] = b;
