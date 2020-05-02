@@ -6,6 +6,9 @@
 #include<opencv2\world.hpp>
 #include<iostream>
 
+#include<fstream>
+
+
 #include<vector>
 
 using namespace cv;

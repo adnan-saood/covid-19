@@ -69,6 +69,8 @@ private:
 	void do_multi_otsu_thresh();
 
 	void validate_global();
+	void validate_multi();
+	void save_confusion_matrix_as_csv();
 	
 };
 

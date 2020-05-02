@@ -25,3 +25,10 @@
 #define FN (1, 0)
 #define FP (0, 1)
 #define TN (1, 1)
+
+#define CONFUSION_MAT_FILE_NAME "con.csv"
+
+#define C0 0
+#define C1 85
+#define C2 170
+#define C3 255

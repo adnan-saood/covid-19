@@ -37,27 +37,32 @@ void prediction::predict()
 			temp.push_back(global_masks_0[i]); //R
 		}
 		cv::merge(temp, result__2ch[i]);
-		imshow("res", result__2ch[i]);
-		imshow("global_mask", global_masks_0[i]);
-		imshow("thresh", thresh_img_0[i]);
-		waitKey();
+		if (0) 
+		{
+			imshow("res", result__2ch[i]);
+			imshow("global_mask", global_masks_0[i]);
+			imshow("thresh", thresh_img_0[i]);
+			waitKey();
+		}
 	}
 
 
-	validate_global();
+    validate_global();
+	save_confusion_matrix_as_csv();
 
 }
 
 
 void prediction::validate_global()
 {
-	int true_positive = 0;
-	int false_positive = 0;
-	int true_negative = 0;
-	int false_negative = 0;
+	
 	confusion = new Mat[n];
 	for (int  i = 0; i < n; i++)
 	{
+		int true_positive = 0;
+		int false_positive = 0;
+		int true_negative = 0;
+		int false_negative = 0;
 		Mat temp = result__2ch[i];
 		for (int r = 0; r < temp.rows; r++)
 		{
@@ -81,10 +86,65 @@ void prediction::validate_global()
 		confusion[i].at<float>TP = true_positive;
 		confusion[i].at<float>FN = false_negative;
 		confusion[i].at<float>FP = false_positive;
-		confusion[i].at<float>TN = true_negative;
+		confusion[i].at<float>TN = true_negative - lungs[i].histogram(0)[0]; //disregard the shit around lungs
+
 	}
 
 }
+void prediction::validate_multi()
+{
+
+	confusion = new Mat[n];
+	for (int i = 0; i < n; i++)
+	{
+		int true_positive = 0;
+		int false_positive = 0;
+		int true_negative = 0;
+		int false_negative = 0;
+		Mat temp = result__2ch[i];
+		for (int r = 0; r < temp.rows; r++)
+		{
+			for (int c = 0; c < temp.cols; c++)
+			{
+				int a = temp.at<Vec3b>(r, c)[MASK_CH];
+				int b = temp.at<Vec3b>(r, c)[PRED_CH];
+				if (a == b)
+					if (a > 0)
+						true_positive++;
+					else
+						true_negative++;
+				else
+					if (a > 0)
+						false_negative++;
+					else
+						false_positive++;
+			}
+		}
+		confusion[i].create(Size(2, 2), CV_32F);
+		confusion[i].at<float>TP = true_positive;
+		confusion[i].at<float>FN = false_negative;
+		confusion[i].at<float>FP = false_positive;
+		confusion[i].at<float>TN = true_negative - lungs[i].histogram(0)[0]; //disregard the shit around lungs
+
+	}
+}
+
+void prediction::save_confusion_matrix_as_csv()
+{
+	ofstream file;
+	string temp;
+	temp = PRED_RES_PATH + string(CONFUSION_MAT_FILE_NAME);
+	file.open("hu.csv");
+	for (int i = 0; i < n; i++)
+	{
+		file << confusion[i].at<float>TP << ',';
+		file << confusion[i].at<float>FN << ',';
+		file << confusion[i].at<float>FP << ',';
+		file << confusion[i].at<float>TN << '\n';
+	}
+	file.close();
+}
+
 
 void prediction::do_thresholding()
 {
