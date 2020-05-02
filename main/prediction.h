@@ -17,6 +17,8 @@ public:
 
 	void do_thresholding();
 
+	void validate();
+
 
 	void save_histogram_imgs();
 	void save_threshholded_imgs();

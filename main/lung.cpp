@@ -221,10 +221,10 @@ vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 	K[0] = 0;
 	K[4] = 255;
 	float max_s_B = -1;
-	for (int a = 1; a < 110; a+=5)
+	for (int a = 1; a < 110; a+=15)
 	{
 		cout << a << endl;
-		for (int b = a; b < 240; b+=5)
+		for (int b = a; b < 240; b+=15)
 		{
 			for (int c = b; c < 256; c+=10)
 			{

@@ -47,10 +47,12 @@ void prediction::predict()
 	}
 
 
-    validate_global();
+	validate();
 	save_confusion_matrix_as_csv();
 
 }
+
+
 
 
 void prediction::validate_global()
@@ -112,7 +114,7 @@ void prediction::validate_multi()
 				{
 					if (a == 0)
 					{
-						true_negative[0]++;
+						true_negative[0]++; // error here fix by adding the true_negative to other classes cases.
 						true_negative[1]++;
 						true_negative[2]++;
 						true_negative[3]++;
@@ -142,7 +144,7 @@ void prediction::validate_multi()
 		confusion[i].create(Size(2, 2), CV_32FC4);
 		for (int iter = 0; i < 4; iter++)
 		{
-			confusion[i].at<Vec4f>TP[iter] = true_positive[iter];
+			confusion[i].at<Vec4f>TP[iter] = true_positive[iter]; // error here in iterator idk what is ?
 			confusion[i].at<Vec4f>FN[iter] = false_negative[iter];
 			confusion[i].at<Vec4f>FP[iter] = false_positive[iter];
 			confusion[i].at<Vec4f>TN[iter] = true_negative[iter] - lungs[i].histogram(0)[0]; //disregard the shit around lungs
@@ -204,6 +206,14 @@ void prediction::do_thresholding()
 		cout << "WRONG FUCKTARD!!";
 }
 
+void prediction::validate()
+{
+	if (this->method < 2)
+		validate_global();
+	else
+		validate_multi();
+}
+
 void prediction::do_global_thresh()
 {
 	histogram_imgs_0 = new Mat[n];
@@ -249,7 +259,7 @@ void prediction::do_multi_otsu_thresh()
 
 		thresh_img_0[i] = std::get<0>(global_0);
 		histogram_imgs_0[i] = std::get<1>(global_0);
-		if (DEBUG)
+		if (0)
 		{
 			cout << "Multi-OTSU Prediction at: " << i << endl;
 			imshow("threshed at: i=" + to_string(i), thresh_img_0[i]);
@@ -304,7 +314,7 @@ void prediction::construct_global_masks()
 	{
 		global_masks_0[i] = mask[i];
 		if (this->method == PRED_MULTI_OTSU)
-			return;
+			continue;
 		threshold(mask[i], global_masks_0[i], 4, 255, THRESH_BINARY);	
 	}
 }
