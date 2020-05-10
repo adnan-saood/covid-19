@@ -12,7 +12,7 @@ lung::lung()
 lung::lung(med in)
 {
 	Mat temp;
-	erode(in.lungmask, temp, Mat::ones(1, 1, 0));
+	erode(in.lungmask, temp, Mat::ones(5, 5, 0));
 	up_lung = cv::min(in.ct, temp == 1);
 	cv::blur(up_lung, up_lung, Size(PRE_BLUR, PRE_BLUR));
 	down_lung = cv::min(in.ct, temp == 2);
@@ -220,12 +220,12 @@ vector<int> lung::thresh_multi_otsu(Mat in, Mat* out)
 	K[0] = 0; // first threshold of 5 is the 0 threshold (nuts job)
 	K[4] = 255; // Last threshold of 5 is the 255 threshold (fucktard job)
 	float max_s_B = -1;
-	for (int a = 1; a < 110; a+=30) //110 is arbitirary
+	for (int a = 1; a < 110; a+=2) //110 is arbitirary
 	{
 		cout <<"-"<< a;
-		for (int b = a; b < 240; b+=30) //240 is arbitirary
+		for (int b = a; b < 240; b+=3) //240 is arbitirary
 		{
-			for (int c = b; c < 256; c+=15) //256 is arbitirary
+			for (int c = b; c < 256; c+=5) //256 is arbitirary
 			{
 				K[1] = a;
 				K[2] = b;

@@ -22,9 +22,12 @@ int main()
 	med m(ct[index], mask[index], lungmask[index]);
 	lung l(m);
 
-	//prediction pr(ct, mask, lungmask, 2);
+	prediction pr(ct, mask, lungmask, 2);
 
-	//pr.predict();
+
+	//pr.construct_masked();
+	//pr.save_masked_lungs_imgs();
+	pr.predict();
 
 	auto global_ = l.thresholded_globally(0);
 	thresh = std::get<0>(global_);
@@ -34,5 +37,6 @@ int main()
 	imshow("mask", m.mask);
 
 	waitKey();
+	system("pause");
 	return 0;
 }

@@ -46,9 +46,7 @@ void prediction::predict()
 		}
 	}
 
-
-	validate();
-	save_confusion_matrix_as_csv();
+	save_threshholded_imgs();
 
 }
 
@@ -416,8 +414,7 @@ void prediction::save_threshholded_imgs()
 	string temp_path = result_path
 		+ THRESH_IMG_FOLDER
 		+ to_string(method)+
-		"\\" +
-		"h0\\";
+		"\\";
 
 	temp_path += THRESH_IMG_NAME;
 	save_imgs(thresh_img_0, temp_path);
