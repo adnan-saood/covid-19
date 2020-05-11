@@ -1,0 +1,2142 @@
+Folder PATH listing
+Volume serial number is D0FF-1D83
+C:.
+³   tree.txt
+³   
+ÃÄÄÄdataset
+³   ÃÄÄÄim
+³   ³   ÃÄÄÄ128
+³   ³   ³       tr_train_z001.png
+³   ³   ³       tr_train_z002.png
+³   ³   ³       tr_train_z003.png
+³   ³   ³       tr_train_z004.png
+³   ³   ³       tr_train_z005.png
+³   ³   ³       tr_train_z006.png
+³   ³   ³       tr_train_z007.png
+³   ³   ³       tr_train_z008.png
+³   ³   ³       tr_train_z009.png
+³   ³   ³       tr_train_z010.png
+³   ³   ³       tr_train_z011.png
+³   ³   ³       tr_train_z012.png
+³   ³   ³       tr_train_z013.png
+³   ³   ³       tr_train_z014.png
+³   ³   ³       tr_train_z015.png
+³   ³   ³       tr_train_z016.png
+³   ³   ³       tr_train_z017.png
+³   ³   ³       tr_train_z018.png
+³   ³   ³       tr_train_z019.png
+³   ³   ³       tr_train_z020.png
+³   ³   ³       tr_train_z021.png
+³   ³   ³       tr_train_z022.png
+³   ³   ³       tr_train_z023.png
+³   ³   ³       tr_train_z024.png
+³   ³   ³       tr_train_z025.png
+³   ³   ³       tr_train_z026.png
+³   ³   ³       tr_train_z027.png
+³   ³   ³       tr_train_z028.png
+³   ³   ³       tr_train_z029.png
+³   ³   ³       tr_train_z030.png
+³   ³   ³       tr_train_z031.png
+³   ³   ³       tr_train_z032.png
+³   ³   ³       tr_train_z033.png
+³   ³   ³       tr_train_z034.png
+³   ³   ³       tr_train_z035.png
+³   ³   ³       tr_train_z036.png
+³   ³   ³       tr_train_z037.png
+³   ³   ³       tr_train_z038.png
+³   ³   ³       tr_train_z039.png
+³   ³   ³       tr_train_z040.png
+³   ³   ³       tr_train_z041.png
+³   ³   ³       tr_train_z042.png
+³   ³   ³       tr_train_z043.png
+³   ³   ³       tr_train_z044.png
+³   ³   ³       tr_train_z045.png
+³   ³   ³       tr_train_z046.png
+³   ³   ³       tr_train_z047.png
+³   ³   ³       tr_train_z048.png
+³   ³   ³       tr_train_z049.png
+³   ³   ³       tr_train_z050.png
+³   ³   ³       tr_train_z051.png
+³   ³   ³       tr_train_z052.png
+³   ³   ³       tr_train_z053.png
+³   ³   ³       tr_train_z054.png
+³   ³   ³       tr_train_z055.png
+³   ³   ³       tr_train_z056.png
+³   ³   ³       tr_train_z057.png
+³   ³   ³       tr_train_z058.png
+³   ³   ³       tr_train_z059.png
+³   ³   ³       tr_train_z060.png
+³   ³   ³       tr_train_z061.png
+³   ³   ³       tr_train_z062.png
+³   ³   ³       tr_train_z063.png
+³   ³   ³       tr_train_z064.png
+³   ³   ³       tr_train_z065.png
+³   ³   ³       tr_train_z066.png
+³   ³   ³       tr_train_z067.png
+³   ³   ³       tr_train_z068.png
+³   ³   ³       tr_train_z069.png
+³   ³   ³       tr_train_z070.png
+³   ³   ³       tr_train_z071.png
+³   ³   ³       tr_train_z072.png
+³   ³   ³       tr_train_z073.png
+³   ³   ³       tr_train_z074.png
+³   ³   ³       tr_train_z075.png
+³   ³   ³       tr_train_z076.png
+³   ³   ³       tr_train_z077.png
+³   ³   ³       tr_train_z078.png
+³   ³   ³       tr_train_z079.png
+³   ³   ³       tr_train_z080.png
+³   ³   ³       tr_train_z081.png
+³   ³   ³       tr_train_z082.png
+³   ³   ³       tr_train_z083.png
+³   ³   ³       tr_train_z084.png
+³   ³   ³       tr_train_z085.png
+³   ³   ³       tr_train_z086.png
+³   ³   ³       tr_train_z087.png
+³   ³   ³       tr_train_z088.png
+³   ³   ³       tr_train_z089.png
+³   ³   ³       tr_train_z090.png
+³   ³   ³       tr_train_z091.png
+³   ³   ³       tr_train_z092.png
+³   ³   ³       tr_train_z093.png
+³   ³   ³       tr_train_z094.png
+³   ³   ³       tr_train_z095.png
+³   ³   ³       tr_train_z096.png
+³   ³   ³       tr_train_z097.png
+³   ³   ³       tr_train_z098.png
+³   ³   ³       tr_train_z099.png
+³   ³   ³       tr_train_z100.png
+³   ³   ³       
+³   ³   ÃÄÄÄ256
+³   ³   ³       tr_train_z001.png
+³   ³   ³       tr_train_z002.png
+³   ³   ³       tr_train_z003.png
+³   ³   ³       tr_train_z004.png
+³   ³   ³       tr_train_z005.png
+³   ³   ³       tr_train_z006.png
+³   ³   ³       tr_train_z007.png
+³   ³   ³       tr_train_z008.png
+³   ³   ³       tr_train_z009.png
+³   ³   ³       tr_train_z010.png
+³   ³   ³       tr_train_z011.png
+³   ³   ³       tr_train_z012.png
+³   ³   ³       tr_train_z013.png
+³   ³   ³       tr_train_z014.png
+³   ³   ³       tr_train_z015.png
+³   ³   ³       tr_train_z016.png
+³   ³   ³       tr_train_z017.png
+³   ³   ³       tr_train_z018.png
+³   ³   ³       tr_train_z019.png
+³   ³   ³       tr_train_z020.png
+³   ³   ³       tr_train_z021.png
+³   ³   ³       tr_train_z022.png
+³   ³   ³       tr_train_z023.png
+³   ³   ³       tr_train_z024.png
+³   ³   ³       tr_train_z025.png
+³   ³   ³       tr_train_z026.png
+³   ³   ³       tr_train_z027.png
+³   ³   ³       tr_train_z028.png
+³   ³   ³       tr_train_z029.png
+³   ³   ³       tr_train_z030.png
+³   ³   ³       tr_train_z031.png
+³   ³   ³       tr_train_z032.png
+³   ³   ³       tr_train_z033.png
+³   ³   ³       tr_train_z034.png
+³   ³   ³       tr_train_z035.png
+³   ³   ³       tr_train_z036.png
+³   ³   ³       tr_train_z037.png
+³   ³   ³       tr_train_z038.png
+³   ³   ³       tr_train_z039.png
+³   ³   ³       tr_train_z040.png
+³   ³   ³       tr_train_z041.png
+³   ³   ³       tr_train_z042.png
+³   ³   ³       tr_train_z043.png
+³   ³   ³       tr_train_z044.png
+³   ³   ³       tr_train_z045.png
+³   ³   ³       tr_train_z046.png
+³   ³   ³       tr_train_z047.png
+³   ³   ³       tr_train_z048.png
+³   ³   ³       tr_train_z049.png
+³   ³   ³       tr_train_z050.png
+³   ³   ³       tr_train_z051.png
+³   ³   ³       tr_train_z052.png
+³   ³   ³       tr_train_z053.png
+³   ³   ³       tr_train_z054.png
+³   ³   ³       tr_train_z055.png
+³   ³   ³       tr_train_z056.png
+³   ³   ³       tr_train_z057.png
+³   ³   ³       tr_train_z058.png
+³   ³   ³       tr_train_z059.png
+³   ³   ³       tr_train_z060.png
+³   ³   ³       tr_train_z061.png
+³   ³   ³       tr_train_z062.png
+³   ³   ³       tr_train_z063.png
+³   ³   ³       tr_train_z064.png
+³   ³   ³       tr_train_z065.png
+³   ³   ³       tr_train_z066.png
+³   ³   ³       tr_train_z067.png
+³   ³   ³       tr_train_z068.png
+³   ³   ³       tr_train_z069.png
+³   ³   ³       tr_train_z070.png
+³   ³   ³       tr_train_z071.png
+³   ³   ³       tr_train_z072.png
+³   ³   ³       tr_train_z073.png
+³   ³   ³       tr_train_z074.png
+³   ³   ³       tr_train_z075.png
+³   ³   ³       tr_train_z076.png
+³   ³   ³       tr_train_z077.png
+³   ³   ³       tr_train_z078.png
+³   ³   ³       tr_train_z079.png
+³   ³   ³       tr_train_z080.png
+³   ³   ³       tr_train_z081.png
+³   ³   ³       tr_train_z082.png
+³   ³   ³       tr_train_z083.png
+³   ³   ³       tr_train_z084.png
+³   ³   ³       tr_train_z085.png
+³   ³   ³       tr_train_z086.png
+³   ³   ³       tr_train_z087.png
+³   ³   ³       tr_train_z088.png
+³   ³   ³       tr_train_z089.png
+³   ³   ³       tr_train_z090.png
+³   ³   ³       tr_train_z091.png
+³   ³   ³       tr_train_z092.png
+³   ³   ³       tr_train_z093.png
+³   ³   ³       tr_train_z094.png
+³   ³   ³       tr_train_z095.png
+³   ³   ³       tr_train_z096.png
+³   ³   ³       tr_train_z097.png
+³   ³   ³       tr_train_z098.png
+³   ³   ³       tr_train_z099.png
+³   ³   ³       tr_train_z100.png
+³   ³   ³       
+³   ³   ÃÄÄÄ512
+³   ³   ³       i001.png
+³   ³   ³       i002.png
+³   ³   ³       i003.png
+³   ³   ³       i004.png
+³   ³   ³       i005.png
+³   ³   ³       i006.png
+³   ³   ³       i007.png
+³   ³   ³       i008.png
+³   ³   ³       i009.png
+³   ³   ³       i010.png
+³   ³   ³       i011.png
+³   ³   ³       i012.png
+³   ³   ³       i013.png
+³   ³   ³       i014.png
+³   ³   ³       i015.png
+³   ³   ³       i016.png
+³   ³   ³       i017.png
+³   ³   ³       i018.png
+³   ³   ³       i019.png
+³   ³   ³       i020.png
+³   ³   ³       i021.png
+³   ³   ³       i022.png
+³   ³   ³       i023.png
+³   ³   ³       i024.png
+³   ³   ³       i025.png
+³   ³   ³       i026.png
+³   ³   ³       i027.png
+³   ³   ³       i028.png
+³   ³   ³       i029.png
+³   ³   ³       i030.png
+³   ³   ³       i031.png
+³   ³   ³       i032.png
+³   ³   ³       i033.png
+³   ³   ³       i034.png
+³   ³   ³       i035.png
+³   ³   ³       i036.png
+³   ³   ³       i037.png
+³   ³   ³       i038.png
+³   ³   ³       i039.png
+³   ³   ³       i040.png
+³   ³   ³       i041.png
+³   ³   ³       i042.png
+³   ³   ³       i043.png
+³   ³   ³       i044.png
+³   ³   ³       i045.png
+³   ³   ³       i046.png
+³   ³   ³       i047.png
+³   ³   ³       i048.png
+³   ³   ³       i049.png
+³   ³   ³       i050.png
+³   ³   ³       i051.png
+³   ³   ³       i052.png
+³   ³   ³       i053.png
+³   ³   ³       i054.png
+³   ³   ³       i055.png
+³   ³   ³       i056.png
+³   ³   ³       i057.png
+³   ³   ³       i058.png
+³   ³   ³       i059.png
+³   ³   ³       i060.png
+³   ³   ³       i061.png
+³   ³   ³       i062.png
+³   ³   ³       i063.png
+³   ³   ³       i064.png
+³   ³   ³       i065.png
+³   ³   ³       i066.png
+³   ³   ³       i067.png
+³   ³   ³       i068.png
+³   ³   ³       i069.png
+³   ³   ³       i070.png
+³   ³   ³       i071.png
+³   ³   ³       i072.png
+³   ³   ³       i073.png
+³   ³   ³       i074.png
+³   ³   ³       i075.png
+³   ³   ³       i076.png
+³   ³   ³       i077.png
+³   ³   ³       i078.png
+³   ³   ³       i079.png
+³   ³   ³       i080.png
+³   ³   ³       i081.png
+³   ³   ³       i082.png
+³   ³   ³       i083.png
+³   ³   ³       i084.png
+³   ³   ³       i085.png
+³   ³   ³       i086.png
+³   ³   ³       i087.png
+³   ³   ³       i088.png
+³   ³   ³       i089.png
+³   ³   ³       i090.png
+³   ³   ³       i091.png
+³   ³   ³       i092.png
+³   ³   ³       i093.png
+³   ³   ³       i094.png
+³   ³   ³       i095.png
+³   ³   ³       i096.png
+³   ³   ³       i097.png
+³   ³   ³       i098.png
+³   ³   ³       i099.png
+³   ³   ³       i100.png
+³   ³   ³       
+³   ³   ÃÄÄÄ64
+³   ³   ³       tr_train_z001.png
+³   ³   ³       tr_train_z002.png
+³   ³   ³       tr_train_z003.png
+³   ³   ³       tr_train_z004.png
+³   ³   ³       tr_train_z005.png
+³   ³   ³       tr_train_z006.png
+³   ³   ³       tr_train_z007.png
+³   ³   ³       tr_train_z008.png
+³   ³   ³       tr_train_z009.png
+³   ³   ³       tr_train_z010.png
+³   ³   ³       tr_train_z011.png
+³   ³   ³       tr_train_z012.png
+³   ³   ³       tr_train_z013.png
+³   ³   ³       tr_train_z014.png
+³   ³   ³       tr_train_z015.png
+³   ³   ³       tr_train_z016.png
+³   ³   ³       tr_train_z017.png
+³   ³   ³       tr_train_z018.png
+³   ³   ³       tr_train_z019.png
+³   ³   ³       tr_train_z020.png
+³   ³   ³       tr_train_z021.png
+³   ³   ³       tr_train_z022.png
+³   ³   ³       tr_train_z023.png
+³   ³   ³       tr_train_z024.png
+³   ³   ³       tr_train_z025.png
+³   ³   ³       tr_train_z026.png
+³   ³   ³       tr_train_z027.png
+³   ³   ³       tr_train_z028.png
+³   ³   ³       tr_train_z029.png
+³   ³   ³       tr_train_z030.png
+³   ³   ³       tr_train_z031.png
+³   ³   ³       tr_train_z032.png
+³   ³   ³       tr_train_z033.png
+³   ³   ³       tr_train_z034.png
+³   ³   ³       tr_train_z035.png
+³   ³   ³       tr_train_z036.png
+³   ³   ³       tr_train_z037.png
+³   ³   ³       tr_train_z038.png
+³   ³   ³       tr_train_z039.png
+³   ³   ³       tr_train_z040.png
+³   ³   ³       tr_train_z041.png
+³   ³   ³       tr_train_z042.png
+³   ³   ³       tr_train_z043.png
+³   ³   ³       tr_train_z044.png
+³   ³   ³       tr_train_z045.png
+³   ³   ³       tr_train_z046.png
+³   ³   ³       tr_train_z047.png
+³   ³   ³       tr_train_z048.png
+³   ³   ³       tr_train_z049.png
+³   ³   ³       tr_train_z050.png
+³   ³   ³       tr_train_z051.png
+³   ³   ³       tr_train_z052.png
+³   ³   ³       tr_train_z053.png
+³   ³   ³       tr_train_z054.png
+³   ³   ³       tr_train_z055.png
+³   ³   ³       tr_train_z056.png
+³   ³   ³       tr_train_z057.png
+³   ³   ³       tr_train_z058.png
+³   ³   ³       tr_train_z059.png
+³   ³   ³       tr_train_z060.png
+³   ³   ³       tr_train_z061.png
+³   ³   ³       tr_train_z062.png
+³   ³   ³       tr_train_z063.png
+³   ³   ³       tr_train_z064.png
+³   ³   ³       tr_train_z065.png
+³   ³   ³       tr_train_z066.png
+³   ³   ³       tr_train_z067.png
+³   ³   ³       tr_train_z068.png
+³   ³   ³       tr_train_z069.png
+³   ³   ³       tr_train_z070.png
+³   ³   ³       tr_train_z071.png
+³   ³   ³       tr_train_z072.png
+³   ³   ³       tr_train_z073.png
+³   ³   ³       tr_train_z074.png
+³   ³   ³       tr_train_z075.png
+³   ³   ³       tr_train_z076.png
+³   ³   ³       tr_train_z077.png
+³   ³   ³       tr_train_z078.png
+³   ³   ³       tr_train_z079.png
+³   ³   ³       tr_train_z080.png
+³   ³   ³       tr_train_z081.png
+³   ³   ³       tr_train_z082.png
+³   ³   ³       tr_train_z083.png
+³   ³   ³       tr_train_z084.png
+³   ³   ³       tr_train_z085.png
+³   ³   ³       tr_train_z086.png
+³   ³   ³       tr_train_z087.png
+³   ³   ³       tr_train_z088.png
+³   ³   ³       tr_train_z089.png
+³   ³   ³       tr_train_z090.png
+³   ³   ³       tr_train_z091.png
+³   ³   ³       tr_train_z092.png
+³   ³   ³       tr_train_z093.png
+³   ³   ³       tr_train_z094.png
+³   ³   ³       tr_train_z095.png
+³   ³   ³       tr_train_z096.png
+³   ³   ³       tr_train_z097.png
+³   ³   ³       tr_train_z098.png
+³   ³   ³       tr_train_z099.png
+³   ³   ³       tr_train_z100.png
+³   ³   ³       
+³   ³   ÀÄÄÄnoBlur
+³   ³       ÃÄÄÄtr_train_128
+³   ³       ³       i001_output.png
+³   ³       ³       i002_output.png
+³   ³       ³       i003_output.png
+³   ³       ³       i004_output.png
+³   ³       ³       i005_output.png
+³   ³       ³       i006_output.png
+³   ³       ³       i007_output.png
+³   ³       ³       i008_output.png
+³   ³       ³       i009_output.png
+³   ³       ³       i010_output.png
+³   ³       ³       i011_output.png
+³   ³       ³       i012_output.png
+³   ³       ³       i013_output.png
+³   ³       ³       i014_output.png
+³   ³       ³       i015_output.png
+³   ³       ³       i016_output.png
+³   ³       ³       i017_output.png
+³   ³       ³       i018_output.png
+³   ³       ³       i019_output.png
+³   ³       ³       i020_output.png
+³   ³       ³       i021_output.png
+³   ³       ³       i022_output.png
+³   ³       ³       i023_output.png
+³   ³       ³       i024_output.png
+³   ³       ³       i025_output.png
+³   ³       ³       i026_output.png
+³   ³       ³       i027_output.png
+³   ³       ³       i028_output.png
+³   ³       ³       i029_output.png
+³   ³       ³       i030_output.png
+³   ³       ³       i031_output.png
+³   ³       ³       i032_output.png
+³   ³       ³       i033_output.png
+³   ³       ³       i034_output.png
+³   ³       ³       i035_output.png
+³   ³       ³       i036_output.png
+³   ³       ³       i037_output.png
+³   ³       ³       i038_output.png
+³   ³       ³       i039_output.png
+³   ³       ³       i040_output.png
+³   ³       ³       i041_output.png
+³   ³       ³       i042_output.png
+³   ³       ³       i043_output.png
+³   ³       ³       i044_output.png
+³   ³       ³       i045_output.png
+³   ³       ³       i046_output.png
+³   ³       ³       i047_output.png
+³   ³       ³       i048_output.png
+³   ³       ³       i049_output.png
+³   ³       ³       i050_output.png
+³   ³       ³       i051_output.png
+³   ³       ³       i052_output.png
+³   ³       ³       i053_output.png
+³   ³       ³       i054_output.png
+³   ³       ³       i055_output.png
+³   ³       ³       i056_output.png
+³   ³       ³       i057_output.png
+³   ³       ³       i058_output.png
+³   ³       ³       i059_output.png
+³   ³       ³       i060_output.png
+³   ³       ³       i061_output.png
+³   ³       ³       i062_output.png
+³   ³       ³       i063_output.png
+³   ³       ³       i064_output.png
+³   ³       ³       i065_output.png
+³   ³       ³       i066_output.png
+³   ³       ³       i067_output.png
+³   ³       ³       i068_output.png
+³   ³       ³       i069_output.png
+³   ³       ³       i070_output.png
+³   ³       ³       i071_output.png
+³   ³       ³       i072_output.png
+³   ³       ³       i073_output.png
+³   ³       ³       i074_output.png
+³   ³       ³       i075_output.png
+³   ³       ³       i076_output.png
+³   ³       ³       i077_output.png
+³   ³       ³       i078_output.png
+³   ³       ³       i079_output.png
+³   ³       ³       i080_output.png
+³   ³       ³       i081_output.png
+³   ³       ³       i082_output.png
+³   ³       ³       i083_output.png
+³   ³       ³       i084_output.png
+³   ³       ³       i085_output.png
+³   ³       ³       i086_output.png
+³   ³       ³       i087_output.png
+³   ³       ³       i088_output.png
+³   ³       ³       i089_output.png
+³   ³       ³       i090_output.png
+³   ³       ³       i091_output.png
+³   ³       ³       i092_output.png
+³   ³       ³       i093_output.png
+³   ³       ³       i094_output.png
+³   ³       ³       i095_output.png
+³   ³       ³       i096_output.png
+³   ³       ³       i097_output.png
+³   ³       ³       i098_output.png
+³   ³       ³       i099_output.png
+³   ³       ³       i100_output.png
+³   ³       ³       
+³   ³       ÀÄÄÄtr_train_256
+³   ³               i001_output.png
+³   ³               i002_output.png
+³   ³               i003_output.png
+³   ³               i004_output.png
+³   ³               i005_output.png
+³   ³               i006_output.png
+³   ³               i007_output.png
+³   ³               i008_output.png
+³   ³               i009_output.png
+³   ³               i010_output.png
+³   ³               i011_output.png
+³   ³               i012_output.png
+³   ³               i013_output.png
+³   ³               i014_output.png
+³   ³               i015_output.png
+³   ³               i016_output.png
+³   ³               i017_output.png
+³   ³               i018_output.png
+³   ³               i019_output.png
+³   ³               i020_output.png
+³   ³               i021_output.png
+³   ³               i022_output.png
+³   ³               i023_output.png
+³   ³               i024_output.png
+³   ³               i025_output.png
+³   ³               i026_output.png
+³   ³               i027_output.png
+³   ³               i028_output.png
+³   ³               i029_output.png
+³   ³               i030_output.png
+³   ³               i031_output.png
+³   ³               i032_output.png
+³   ³               i033_output.png
+³   ³               i034_output.png
+³   ³               i035_output.png
+³   ³               i036_output.png
+³   ³               i037_output.png
+³   ³               i038_output.png
+³   ³               i039_output.png
+³   ³               i040_output.png
+³   ³               i041_output.png
+³   ³               i042_output.png
+³   ³               i043_output.png
+³   ³               i044_output.png
+³   ³               i045_output.png
+³   ³               i046_output.png
+³   ³               i047_output.png
+³   ³               i048_output.png
+³   ³               i049_output.png
+³   ³               i050_output.png
+³   ³               i051_output.png
+³   ³               i052_output.png
+³   ³               i053_output.png
+³   ³               i054_output.png
+³   ³               i055_output.png
+³   ³               i056_output.png
+³   ³               i057_output.png
+³   ³               i058_output.png
+³   ³               i059_output.png
+³   ³               i060_output.png
+³   ³               i061_output.png
+³   ³               i062_output.png
+³   ³               i063_output.png
+³   ³               i064_output.png
+³   ³               i065_output.png
+³   ³               i066_output.png
+³   ³               i067_output.png
+³   ³               i068_output.png
+³   ³               i069_output.png
+³   ³               i070_output.png
+³   ³               i071_output.png
+³   ³               i072_output.png
+³   ³               i073_output.png
+³   ³               i074_output.png
+³   ³               i075_output.png
+³   ³               i076_output.png
+³   ³               i077_output.png
+³   ³               i078_output.png
+³   ³               i079_output.png
+³   ³               i080_output.png
+³   ³               i081_output.png
+³   ³               i082_output.png
+³   ³               i083_output.png
+³   ³               i084_output.png
+³   ³               i085_output.png
+³   ³               i086_output.png
+³   ³               i087_output.png
+³   ³               i088_output.png
+³   ³               i089_output.png
+³   ³               i090_output.png
+³   ³               i091_output.png
+³   ³               i092_output.png
+³   ³               i093_output.png
+³   ³               i094_output.png
+³   ³               i095_output.png
+³   ³               i096_output.png
+³   ³               i097_output.png
+³   ³               i098_output.png
+³   ³               i099_output.png
+³   ³               i100_output.png
+³   ³               
+³   ÃÄÄÄmask
+³   ³   ÃÄÄÄbinary
+³   ³   ³   ÃÄÄÄ128
+³   ³   ³   ³       tr_mask_z001_output.png
+³   ³   ³   ³       tr_mask_z002_output.png
+³   ³   ³   ³       tr_mask_z003_output.png
+³   ³   ³   ³       tr_mask_z004_output.png
+³   ³   ³   ³       tr_mask_z005_output.png
+³   ³   ³   ³       tr_mask_z006_output.png
+³   ³   ³   ³       tr_mask_z007_output.png
+³   ³   ³   ³       tr_mask_z008_output.png
+³   ³   ³   ³       tr_mask_z009_output.png
+³   ³   ³   ³       tr_mask_z010_output.png
+³   ³   ³   ³       tr_mask_z011_output.png
+³   ³   ³   ³       tr_mask_z012_output.png
+³   ³   ³   ³       tr_mask_z013_output.png
+³   ³   ³   ³       tr_mask_z014_output.png
+³   ³   ³   ³       tr_mask_z015_output.png
+³   ³   ³   ³       tr_mask_z016_output.png
+³   ³   ³   ³       tr_mask_z017_output.png
+³   ³   ³   ³       tr_mask_z018_output.png
+³   ³   ³   ³       tr_mask_z019_output.png
+³   ³   ³   ³       tr_mask_z020_output.png
+³   ³   ³   ³       tr_mask_z021_output.png
+³   ³   ³   ³       tr_mask_z022_output.png
+³   ³   ³   ³       tr_mask_z023_output.png
+³   ³   ³   ³       tr_mask_z024_output.png
+³   ³   ³   ³       tr_mask_z025_output.png
+³   ³   ³   ³       tr_mask_z026_output.png
+³   ³   ³   ³       tr_mask_z027_output.png
+³   ³   ³   ³       tr_mask_z028_output.png
+³   ³   ³   ³       tr_mask_z029_output.png
+³   ³   ³   ³       tr_mask_z030_output.png
+³   ³   ³   ³       tr_mask_z031_output.png
+³   ³   ³   ³       tr_mask_z032_output.png
+³   ³   ³   ³       tr_mask_z033_output.png
+³   ³   ³   ³       tr_mask_z034_output.png
+³   ³   ³   ³       tr_mask_z035_output.png
+³   ³   ³   ³       tr_mask_z036_output.png
+³   ³   ³   ³       tr_mask_z037_output.png
+³   ³   ³   ³       tr_mask_z038_output.png
+³   ³   ³   ³       tr_mask_z039_output.png
+³   ³   ³   ³       tr_mask_z040_output.png
+³   ³   ³   ³       tr_mask_z041_output.png
+³   ³   ³   ³       tr_mask_z042_output.png
+³   ³   ³   ³       tr_mask_z043_output.png
+³   ³   ³   ³       tr_mask_z044_output.png
+³   ³   ³   ³       tr_mask_z045_output.png
+³   ³   ³   ³       tr_mask_z046_output.png
+³   ³   ³   ³       tr_mask_z047_output.png
+³   ³   ³   ³       tr_mask_z048_output.png
+³   ³   ³   ³       tr_mask_z049_output.png
+³   ³   ³   ³       tr_mask_z050_output.png
+³   ³   ³   ³       tr_mask_z051_output.png
+³   ³   ³   ³       tr_mask_z052_output.png
+³   ³   ³   ³       tr_mask_z053_output.png
+³   ³   ³   ³       tr_mask_z054_output.png
+³   ³   ³   ³       tr_mask_z055_output.png
+³   ³   ³   ³       tr_mask_z056_output.png
+³   ³   ³   ³       tr_mask_z057_output.png
+³   ³   ³   ³       tr_mask_z058_output.png
+³   ³   ³   ³       tr_mask_z059_output.png
+³   ³   ³   ³       tr_mask_z060_output.png
+³   ³   ³   ³       tr_mask_z061_output.png
+³   ³   ³   ³       tr_mask_z062_output.png
+³   ³   ³   ³       tr_mask_z063_output.png
+³   ³   ³   ³       tr_mask_z064_output.png
+³   ³   ³   ³       tr_mask_z065_output.png
+³   ³   ³   ³       tr_mask_z066_output.png
+³   ³   ³   ³       tr_mask_z067_output.png
+³   ³   ³   ³       tr_mask_z068_output.png
+³   ³   ³   ³       tr_mask_z069_output.png
+³   ³   ³   ³       tr_mask_z070_output.png
+³   ³   ³   ³       tr_mask_z071_output.png
+³   ³   ³   ³       tr_mask_z072_output.png
+³   ³   ³   ³       tr_mask_z073_output.png
+³   ³   ³   ³       tr_mask_z074_output.png
+³   ³   ³   ³       tr_mask_z075_output.png
+³   ³   ³   ³       tr_mask_z076_output.png
+³   ³   ³   ³       tr_mask_z077_output.png
+³   ³   ³   ³       tr_mask_z078_output.png
+³   ³   ³   ³       tr_mask_z079_output.png
+³   ³   ³   ³       tr_mask_z080_output.png
+³   ³   ³   ³       tr_mask_z081_output.png
+³   ³   ³   ³       tr_mask_z082_output.png
+³   ³   ³   ³       tr_mask_z083_output.png
+³   ³   ³   ³       tr_mask_z084_output.png
+³   ³   ³   ³       tr_mask_z085_output.png
+³   ³   ³   ³       tr_mask_z086_output.png
+³   ³   ³   ³       tr_mask_z087_output.png
+³   ³   ³   ³       tr_mask_z088_output.png
+³   ³   ³   ³       tr_mask_z089_output.png
+³   ³   ³   ³       tr_mask_z090_output.png
+³   ³   ³   ³       tr_mask_z091_output.png
+³   ³   ³   ³       tr_mask_z092_output.png
+³   ³   ³   ³       tr_mask_z093_output.png
+³   ³   ³   ³       tr_mask_z094_output.png
+³   ³   ³   ³       tr_mask_z095_output.png
+³   ³   ³   ³       tr_mask_z096_output.png
+³   ³   ³   ³       tr_mask_z097_output.png
+³   ³   ³   ³       tr_mask_z098_output.png
+³   ³   ³   ³       tr_mask_z099_output.png
+³   ³   ³   ³       tr_mask_z100_output.png
+³   ³   ³   ³       
+³   ³   ³   ÃÄÄÄ256
+³   ³   ³   ³       tr_mask_z001_output.png
+³   ³   ³   ³       tr_mask_z002_output.png
+³   ³   ³   ³       tr_mask_z003_output.png
+³   ³   ³   ³       tr_mask_z004_output.png
+³   ³   ³   ³       tr_mask_z005_output.png
+³   ³   ³   ³       tr_mask_z006_output.png
+³   ³   ³   ³       tr_mask_z007_output.png
+³   ³   ³   ³       tr_mask_z008_output.png
+³   ³   ³   ³       tr_mask_z009_output.png
+³   ³   ³   ³       tr_mask_z010_output.png
+³   ³   ³   ³       tr_mask_z011_output.png
+³   ³   ³   ³       tr_mask_z012_output.png
+³   ³   ³   ³       tr_mask_z013_output.png
+³   ³   ³   ³       tr_mask_z014_output.png
+³   ³   ³   ³       tr_mask_z015_output.png
+³   ³   ³   ³       tr_mask_z016_output.png
+³   ³   ³   ³       tr_mask_z017_output.png
+³   ³   ³   ³       tr_mask_z018_output.png
+³   ³   ³   ³       tr_mask_z019_output.png
+³   ³   ³   ³       tr_mask_z020_output.png
+³   ³   ³   ³       tr_mask_z021_output.png
+³   ³   ³   ³       tr_mask_z022_output.png
+³   ³   ³   ³       tr_mask_z023_output.png
+³   ³   ³   ³       tr_mask_z024_output.png
+³   ³   ³   ³       tr_mask_z025_output.png
+³   ³   ³   ³       tr_mask_z026_output.png
+³   ³   ³   ³       tr_mask_z027_output.png
+³   ³   ³   ³       tr_mask_z028_output.png
+³   ³   ³   ³       tr_mask_z029_output.png
+³   ³   ³   ³       tr_mask_z030_output.png
+³   ³   ³   ³       tr_mask_z031_output.png
+³   ³   ³   ³       tr_mask_z032_output.png
+³   ³   ³   ³       tr_mask_z033_output.png
+³   ³   ³   ³       tr_mask_z034_output.png
+³   ³   ³   ³       tr_mask_z035_output.png
+³   ³   ³   ³       tr_mask_z036_output.png
+³   ³   ³   ³       tr_mask_z037_output.png
+³   ³   ³   ³       tr_mask_z038_output.png
+³   ³   ³   ³       tr_mask_z039_output.png
+³   ³   ³   ³       tr_mask_z040_output.png
+³   ³   ³   ³       tr_mask_z041_output.png
+³   ³   ³   ³       tr_mask_z042_output.png
+³   ³   ³   ³       tr_mask_z043_output.png
+³   ³   ³   ³       tr_mask_z044_output.png
+³   ³   ³   ³       tr_mask_z045_output.png
+³   ³   ³   ³       tr_mask_z046_output.png
+³   ³   ³   ³       tr_mask_z047_output.png
+³   ³   ³   ³       tr_mask_z048_output.png
+³   ³   ³   ³       tr_mask_z049_output.png
+³   ³   ³   ³       tr_mask_z050_output.png
+³   ³   ³   ³       tr_mask_z051_output.png
+³   ³   ³   ³       tr_mask_z052_output.png
+³   ³   ³   ³       tr_mask_z053_output.png
+³   ³   ³   ³       tr_mask_z054_output.png
+³   ³   ³   ³       tr_mask_z055_output.png
+³   ³   ³   ³       tr_mask_z056_output.png
+³   ³   ³   ³       tr_mask_z057_output.png
+³   ³   ³   ³       tr_mask_z058_output.png
+³   ³   ³   ³       tr_mask_z059_output.png
+³   ³   ³   ³       tr_mask_z060_output.png
+³   ³   ³   ³       tr_mask_z061_output.png
+³   ³   ³   ³       tr_mask_z062_output.png
+³   ³   ³   ³       tr_mask_z063_output.png
+³   ³   ³   ³       tr_mask_z064_output.png
+³   ³   ³   ³       tr_mask_z065_output.png
+³   ³   ³   ³       tr_mask_z066_output.png
+³   ³   ³   ³       tr_mask_z067_output.png
+³   ³   ³   ³       tr_mask_z068_output.png
+³   ³   ³   ³       tr_mask_z069_output.png
+³   ³   ³   ³       tr_mask_z070_output.png
+³   ³   ³   ³       tr_mask_z071_output.png
+³   ³   ³   ³       tr_mask_z072_output.png
+³   ³   ³   ³       tr_mask_z073_output.png
+³   ³   ³   ³       tr_mask_z074_output.png
+³   ³   ³   ³       tr_mask_z075_output.png
+³   ³   ³   ³       tr_mask_z076_output.png
+³   ³   ³   ³       tr_mask_z077_output.png
+³   ³   ³   ³       tr_mask_z078_output.png
+³   ³   ³   ³       tr_mask_z079_output.png
+³   ³   ³   ³       tr_mask_z080_output.png
+³   ³   ³   ³       tr_mask_z081_output.png
+³   ³   ³   ³       tr_mask_z082_output.png
+³   ³   ³   ³       tr_mask_z083_output.png
+³   ³   ³   ³       tr_mask_z084_output.png
+³   ³   ³   ³       tr_mask_z085_output.png
+³   ³   ³   ³       tr_mask_z086_output.png
+³   ³   ³   ³       tr_mask_z087_output.png
+³   ³   ³   ³       tr_mask_z088_output.png
+³   ³   ³   ³       tr_mask_z089_output.png
+³   ³   ³   ³       tr_mask_z090_output.png
+³   ³   ³   ³       tr_mask_z091_output.png
+³   ³   ³   ³       tr_mask_z092_output.png
+³   ³   ³   ³       tr_mask_z093_output.png
+³   ³   ³   ³       tr_mask_z094_output.png
+³   ³   ³   ³       tr_mask_z095_output.png
+³   ³   ³   ³       tr_mask_z096_output.png
+³   ³   ³   ³       tr_mask_z097_output.png
+³   ³   ³   ³       tr_mask_z098_output.png
+³   ³   ³   ³       tr_mask_z099_output.png
+³   ³   ³   ³       tr_mask_z100_output.png
+³   ³   ³   ³       
+³   ³   ³   ÃÄÄÄ512
+³   ³   ³   ³       tr_mask_z001_output.png
+³   ³   ³   ³       tr_mask_z002_output.png
+³   ³   ³   ³       tr_mask_z003_output.png
+³   ³   ³   ³       tr_mask_z004_output.png
+³   ³   ³   ³       tr_mask_z005_output.png
+³   ³   ³   ³       tr_mask_z006_output.png
+³   ³   ³   ³       tr_mask_z007_output.png
+³   ³   ³   ³       tr_mask_z008_output.png
+³   ³   ³   ³       tr_mask_z009_output.png
+³   ³   ³   ³       tr_mask_z010_output.png
+³   ³   ³   ³       tr_mask_z011_output.png
+³   ³   ³   ³       tr_mask_z012_output.png
+³   ³   ³   ³       tr_mask_z013_output.png
+³   ³   ³   ³       tr_mask_z014_output.png
+³   ³   ³   ³       tr_mask_z015_output.png
+³   ³   ³   ³       tr_mask_z016_output.png
+³   ³   ³   ³       tr_mask_z017_output.png
+³   ³   ³   ³       tr_mask_z018_output.png
+³   ³   ³   ³       tr_mask_z019_output.png
+³   ³   ³   ³       tr_mask_z020_output.png
+³   ³   ³   ³       tr_mask_z021_output.png
+³   ³   ³   ³       tr_mask_z022_output.png
+³   ³   ³   ³       tr_mask_z023_output.png
+³   ³   ³   ³       tr_mask_z024_output.png
+³   ³   ³   ³       tr_mask_z025_output.png
+³   ³   ³   ³       tr_mask_z026_output.png
+³   ³   ³   ³       tr_mask_z027_output.png
+³   ³   ³   ³       tr_mask_z028_output.png
+³   ³   ³   ³       tr_mask_z029_output.png
+³   ³   ³   ³       tr_mask_z030_output.png
+³   ³   ³   ³       tr_mask_z031_output.png
+³   ³   ³   ³       tr_mask_z032_output.png
+³   ³   ³   ³       tr_mask_z033_output.png
+³   ³   ³   ³       tr_mask_z034_output.png
+³   ³   ³   ³       tr_mask_z035_output.png
+³   ³   ³   ³       tr_mask_z036_output.png
+³   ³   ³   ³       tr_mask_z037_output.png
+³   ³   ³   ³       tr_mask_z038_output.png
+³   ³   ³   ³       tr_mask_z039_output.png
+³   ³   ³   ³       tr_mask_z040_output.png
+³   ³   ³   ³       tr_mask_z041_output.png
+³   ³   ³   ³       tr_mask_z042_output.png
+³   ³   ³   ³       tr_mask_z043_output.png
+³   ³   ³   ³       tr_mask_z044_output.png
+³   ³   ³   ³       tr_mask_z045_output.png
+³   ³   ³   ³       tr_mask_z046_output.png
+³   ³   ³   ³       tr_mask_z047_output.png
+³   ³   ³   ³       tr_mask_z048_output.png
+³   ³   ³   ³       tr_mask_z049_output.png
+³   ³   ³   ³       tr_mask_z050_output.png
+³   ³   ³   ³       tr_mask_z051_output.png
+³   ³   ³   ³       tr_mask_z052_output.png
+³   ³   ³   ³       tr_mask_z053_output.png
+³   ³   ³   ³       tr_mask_z054_output.png
+³   ³   ³   ³       tr_mask_z055_output.png
+³   ³   ³   ³       tr_mask_z056_output.png
+³   ³   ³   ³       tr_mask_z057_output.png
+³   ³   ³   ³       tr_mask_z058_output.png
+³   ³   ³   ³       tr_mask_z059_output.png
+³   ³   ³   ³       tr_mask_z060_output.png
+³   ³   ³   ³       tr_mask_z061_output.png
+³   ³   ³   ³       tr_mask_z062_output.png
+³   ³   ³   ³       tr_mask_z063_output.png
+³   ³   ³   ³       tr_mask_z064_output.png
+³   ³   ³   ³       tr_mask_z065_output.png
+³   ³   ³   ³       tr_mask_z066_output.png
+³   ³   ³   ³       tr_mask_z067_output.png
+³   ³   ³   ³       tr_mask_z068_output.png
+³   ³   ³   ³       tr_mask_z069_output.png
+³   ³   ³   ³       tr_mask_z070_output.png
+³   ³   ³   ³       tr_mask_z071_output.png
+³   ³   ³   ³       tr_mask_z072_output.png
+³   ³   ³   ³       tr_mask_z073_output.png
+³   ³   ³   ³       tr_mask_z074_output.png
+³   ³   ³   ³       tr_mask_z075_output.png
+³   ³   ³   ³       tr_mask_z076_output.png
+³   ³   ³   ³       tr_mask_z077_output.png
+³   ³   ³   ³       tr_mask_z078_output.png
+³   ³   ³   ³       tr_mask_z079_output.png
+³   ³   ³   ³       tr_mask_z080_output.png
+³   ³   ³   ³       tr_mask_z081_output.png
+³   ³   ³   ³       tr_mask_z082_output.png
+³   ³   ³   ³       tr_mask_z083_output.png
+³   ³   ³   ³       tr_mask_z084_output.png
+³   ³   ³   ³       tr_mask_z085_output.png
+³   ³   ³   ³       tr_mask_z086_output.png
+³   ³   ³   ³       tr_mask_z087_output.png
+³   ³   ³   ³       tr_mask_z088_output.png
+³   ³   ³   ³       tr_mask_z089_output.png
+³   ³   ³   ³       tr_mask_z090_output.png
+³   ³   ³   ³       tr_mask_z091_output.png
+³   ³   ³   ³       tr_mask_z092_output.png
+³   ³   ³   ³       tr_mask_z093_output.png
+³   ³   ³   ³       tr_mask_z094_output.png
+³   ³   ³   ³       tr_mask_z095_output.png
+³   ³   ³   ³       tr_mask_z096_output.png
+³   ³   ³   ³       tr_mask_z097_output.png
+³   ³   ³   ³       tr_mask_z098_output.png
+³   ³   ³   ³       tr_mask_z099_output.png
+³   ³   ³   ³       tr_mask_z100_output.png
+³   ³   ³   ³       
+³   ³   ³   ÀÄÄÄ64
+³   ³   ³           tr_mask_z001_output.png
+³   ³   ³           tr_mask_z002_output.png
+³   ³   ³           tr_mask_z003_output.png
+³   ³   ³           tr_mask_z004_output.png
+³   ³   ³           tr_mask_z005_output.png
+³   ³   ³           tr_mask_z006_output.png
+³   ³   ³           tr_mask_z007_output.png
+³   ³   ³           tr_mask_z008_output.png
+³   ³   ³           tr_mask_z009_output.png
+³   ³   ³           tr_mask_z010_output.png
+³   ³   ³           tr_mask_z011_output.png
+³   ³   ³           tr_mask_z012_output.png
+³   ³   ³           tr_mask_z013_output.png
+³   ³   ³           tr_mask_z014_output.png
+³   ³   ³           tr_mask_z015_output.png
+³   ³   ³           tr_mask_z016_output.png
+³   ³   ³           tr_mask_z017_output.png
+³   ³   ³           tr_mask_z018_output.png
+³   ³   ³           tr_mask_z019_output.png
+³   ³   ³           tr_mask_z020_output.png
+³   ³   ³           tr_mask_z021_output.png
+³   ³   ³           tr_mask_z022_output.png
+³   ³   ³           tr_mask_z023_output.png
+³   ³   ³           tr_mask_z024_output.png
+³   ³   ³           tr_mask_z025_output.png
+³   ³   ³           tr_mask_z026_output.png
+³   ³   ³           tr_mask_z027_output.png
+³   ³   ³           tr_mask_z028_output.png
+³   ³   ³           tr_mask_z029_output.png
+³   ³   ³           tr_mask_z030_output.png
+³   ³   ³           tr_mask_z031_output.png
+³   ³   ³           tr_mask_z032_output.png
+³   ³   ³           tr_mask_z033_output.png
+³   ³   ³           tr_mask_z034_output.png
+³   ³   ³           tr_mask_z035_output.png
+³   ³   ³           tr_mask_z036_output.png
+³   ³   ³           tr_mask_z037_output.png
+³   ³   ³           tr_mask_z038_output.png
+³   ³   ³           tr_mask_z039_output.png
+³   ³   ³           tr_mask_z040_output.png
+³   ³   ³           tr_mask_z041_output.png
+³   ³   ³           tr_mask_z042_output.png
+³   ³   ³           tr_mask_z043_output.png
+³   ³   ³           tr_mask_z044_output.png
+³   ³   ³           tr_mask_z045_output.png
+³   ³   ³           tr_mask_z046_output.png
+³   ³   ³           tr_mask_z047_output.png
+³   ³   ³           tr_mask_z048_output.png
+³   ³   ³           tr_mask_z049_output.png
+³   ³   ³           tr_mask_z050_output.png
+³   ³   ³           tr_mask_z051_output.png
+³   ³   ³           tr_mask_z052_output.png
+³   ³   ³           tr_mask_z053_output.png
+³   ³   ³           tr_mask_z054_output.png
+³   ³   ³           tr_mask_z055_output.png
+³   ³   ³           tr_mask_z056_output.png
+³   ³   ³           tr_mask_z057_output.png
+³   ³   ³           tr_mask_z058_output.png
+³   ³   ³           tr_mask_z059_output.png
+³   ³   ³           tr_mask_z060_output.png
+³   ³   ³           tr_mask_z061_output.png
+³   ³   ³           tr_mask_z062_output.png
+³   ³   ³           tr_mask_z063_output.png
+³   ³   ³           tr_mask_z064_output.png
+³   ³   ³           tr_mask_z065_output.png
+³   ³   ³           tr_mask_z066_output.png
+³   ³   ³           tr_mask_z067_output.png
+³   ³   ³           tr_mask_z068_output.png
+³   ³   ³           tr_mask_z069_output.png
+³   ³   ³           tr_mask_z070_output.png
+³   ³   ³           tr_mask_z071_output.png
+³   ³   ³           tr_mask_z072_output.png
+³   ³   ³           tr_mask_z073_output.png
+³   ³   ³           tr_mask_z074_output.png
+³   ³   ³           tr_mask_z075_output.png
+³   ³   ³           tr_mask_z076_output.png
+³   ³   ³           tr_mask_z077_output.png
+³   ³   ³           tr_mask_z078_output.png
+³   ³   ³           tr_mask_z079_output.png
+³   ³   ³           tr_mask_z080_output.png
+³   ³   ³           tr_mask_z081_output.png
+³   ³   ³           tr_mask_z082_output.png
+³   ³   ³           tr_mask_z083_output.png
+³   ³   ³           tr_mask_z084_output.png
+³   ³   ³           tr_mask_z085_output.png
+³   ³   ³           tr_mask_z086_output.png
+³   ³   ³           tr_mask_z087_output.png
+³   ³   ³           tr_mask_z088_output.png
+³   ³   ³           tr_mask_z089_output.png
+³   ³   ³           tr_mask_z090_output.png
+³   ³   ³           tr_mask_z091_output.png
+³   ³   ³           tr_mask_z092_output.png
+³   ³   ³           tr_mask_z093_output.png
+³   ³   ³           tr_mask_z094_output.png
+³   ³   ³           tr_mask_z095_output.png
+³   ³   ³           tr_mask_z096_output.png
+³   ³   ³           tr_mask_z097_output.png
+³   ³   ³           tr_mask_z098_output.png
+³   ³   ³           tr_mask_z099_output.png
+³   ³   ³           tr_mask_z100_output.png
+³   ³   ³           
+³   ³   ÀÄÄÄmulti
+³   ³       ÃÄÄÄ128
+³   ³       ³       tr_mask_z001.png
+³   ³       ³       tr_mask_z002.png
+³   ³       ³       tr_mask_z003.png
+³   ³       ³       tr_mask_z004.png
+³   ³       ³       tr_mask_z005.png
+³   ³       ³       tr_mask_z006.png
+³   ³       ³       tr_mask_z007.png
+³   ³       ³       tr_mask_z008.png
+³   ³       ³       tr_mask_z009.png
+³   ³       ³       tr_mask_z010.png
+³   ³       ³       tr_mask_z011.png
+³   ³       ³       tr_mask_z012.png
+³   ³       ³       tr_mask_z013.png
+³   ³       ³       tr_mask_z014.png
+³   ³       ³       tr_mask_z015.png
+³   ³       ³       tr_mask_z016.png
+³   ³       ³       tr_mask_z017.png
+³   ³       ³       tr_mask_z018.png
+³   ³       ³       tr_mask_z019.png
+³   ³       ³       tr_mask_z020.png
+³   ³       ³       tr_mask_z021.png
+³   ³       ³       tr_mask_z022.png
+³   ³       ³       tr_mask_z023.png
+³   ³       ³       tr_mask_z024.png
+³   ³       ³       tr_mask_z025.png
+³   ³       ³       tr_mask_z026.png
+³   ³       ³       tr_mask_z027.png
+³   ³       ³       tr_mask_z028.png
+³   ³       ³       tr_mask_z029.png
+³   ³       ³       tr_mask_z030.png
+³   ³       ³       tr_mask_z031.png
+³   ³       ³       tr_mask_z032.png
+³   ³       ³       tr_mask_z033.png
+³   ³       ³       tr_mask_z034.png
+³   ³       ³       tr_mask_z035.png
+³   ³       ³       tr_mask_z036.png
+³   ³       ³       tr_mask_z037.png
+³   ³       ³       tr_mask_z038.png
+³   ³       ³       tr_mask_z039.png
+³   ³       ³       tr_mask_z040.png
+³   ³       ³       tr_mask_z041.png
+³   ³       ³       tr_mask_z042.png
+³   ³       ³       tr_mask_z043.png
+³   ³       ³       tr_mask_z044.png
+³   ³       ³       tr_mask_z045.png
+³   ³       ³       tr_mask_z046.png
+³   ³       ³       tr_mask_z047.png
+³   ³       ³       tr_mask_z048.png
+³   ³       ³       tr_mask_z049.png
+³   ³       ³       tr_mask_z050.png
+³   ³       ³       tr_mask_z051.png
+³   ³       ³       tr_mask_z052.png
+³   ³       ³       tr_mask_z053.png
+³   ³       ³       tr_mask_z054.png
+³   ³       ³       tr_mask_z055.png
+³   ³       ³       tr_mask_z056.png
+³   ³       ³       tr_mask_z057.png
+³   ³       ³       tr_mask_z058.png
+³   ³       ³       tr_mask_z059.png
+³   ³       ³       tr_mask_z060.png
+³   ³       ³       tr_mask_z061.png
+³   ³       ³       tr_mask_z062.png
+³   ³       ³       tr_mask_z063.png
+³   ³       ³       tr_mask_z064.png
+³   ³       ³       tr_mask_z065.png
+³   ³       ³       tr_mask_z066.png
+³   ³       ³       tr_mask_z067.png
+³   ³       ³       tr_mask_z068.png
+³   ³       ³       tr_mask_z069.png
+³   ³       ³       tr_mask_z070.png
+³   ³       ³       tr_mask_z071.png
+³   ³       ³       tr_mask_z072.png
+³   ³       ³       tr_mask_z073.png
+³   ³       ³       tr_mask_z074.png
+³   ³       ³       tr_mask_z075.png
+³   ³       ³       tr_mask_z076.png
+³   ³       ³       tr_mask_z077.png
+³   ³       ³       tr_mask_z078.png
+³   ³       ³       tr_mask_z079.png
+³   ³       ³       tr_mask_z080.png
+³   ³       ³       tr_mask_z081.png
+³   ³       ³       tr_mask_z082.png
+³   ³       ³       tr_mask_z083.png
+³   ³       ³       tr_mask_z084.png
+³   ³       ³       tr_mask_z085.png
+³   ³       ³       tr_mask_z086.png
+³   ³       ³       tr_mask_z087.png
+³   ³       ³       tr_mask_z088.png
+³   ³       ³       tr_mask_z089.png
+³   ³       ³       tr_mask_z090.png
+³   ³       ³       tr_mask_z091.png
+³   ³       ³       tr_mask_z092.png
+³   ³       ³       tr_mask_z093.png
+³   ³       ³       tr_mask_z094.png
+³   ³       ³       tr_mask_z095.png
+³   ³       ³       tr_mask_z096.png
+³   ³       ³       tr_mask_z097.png
+³   ³       ³       tr_mask_z098.png
+³   ³       ³       tr_mask_z099.png
+³   ³       ³       tr_mask_z100.png
+³   ³       ³       
+³   ³       ÃÄÄÄ256
+³   ³       ³       tr_mask_z001.png
+³   ³       ³       tr_mask_z002.png
+³   ³       ³       tr_mask_z003.png
+³   ³       ³       tr_mask_z004.png
+³   ³       ³       tr_mask_z005.png
+³   ³       ³       tr_mask_z006.png
+³   ³       ³       tr_mask_z007.png
+³   ³       ³       tr_mask_z008.png
+³   ³       ³       tr_mask_z009.png
+³   ³       ³       tr_mask_z010.png
+³   ³       ³       tr_mask_z011.png
+³   ³       ³       tr_mask_z012.png
+³   ³       ³       tr_mask_z013.png
+³   ³       ³       tr_mask_z014.png
+³   ³       ³       tr_mask_z015.png
+³   ³       ³       tr_mask_z016.png
+³   ³       ³       tr_mask_z017.png
+³   ³       ³       tr_mask_z018.png
+³   ³       ³       tr_mask_z019.png
+³   ³       ³       tr_mask_z020.png
+³   ³       ³       tr_mask_z021.png
+³   ³       ³       tr_mask_z022.png
+³   ³       ³       tr_mask_z023.png
+³   ³       ³       tr_mask_z024.png
+³   ³       ³       tr_mask_z025.png
+³   ³       ³       tr_mask_z026.png
+³   ³       ³       tr_mask_z027.png
+³   ³       ³       tr_mask_z028.png
+³   ³       ³       tr_mask_z029.png
+³   ³       ³       tr_mask_z030.png
+³   ³       ³       tr_mask_z031.png
+³   ³       ³       tr_mask_z032.png
+³   ³       ³       tr_mask_z033.png
+³   ³       ³       tr_mask_z034.png
+³   ³       ³       tr_mask_z035.png
+³   ³       ³       tr_mask_z036.png
+³   ³       ³       tr_mask_z037.png
+³   ³       ³       tr_mask_z038.png
+³   ³       ³       tr_mask_z039.png
+³   ³       ³       tr_mask_z040.png
+³   ³       ³       tr_mask_z041.png
+³   ³       ³       tr_mask_z042.png
+³   ³       ³       tr_mask_z043.png
+³   ³       ³       tr_mask_z044.png
+³   ³       ³       tr_mask_z045.png
+³   ³       ³       tr_mask_z046.png
+³   ³       ³       tr_mask_z047.png
+³   ³       ³       tr_mask_z048.png
+³   ³       ³       tr_mask_z049.png
+³   ³       ³       tr_mask_z050.png
+³   ³       ³       tr_mask_z051.png
+³   ³       ³       tr_mask_z052.png
+³   ³       ³       tr_mask_z053.png
+³   ³       ³       tr_mask_z054.png
+³   ³       ³       tr_mask_z055.png
+³   ³       ³       tr_mask_z056.png
+³   ³       ³       tr_mask_z057.png
+³   ³       ³       tr_mask_z058.png
+³   ³       ³       tr_mask_z059.png
+³   ³       ³       tr_mask_z060.png
+³   ³       ³       tr_mask_z061.png
+³   ³       ³       tr_mask_z062.png
+³   ³       ³       tr_mask_z063.png
+³   ³       ³       tr_mask_z064.png
+³   ³       ³       tr_mask_z065.png
+³   ³       ³       tr_mask_z066.png
+³   ³       ³       tr_mask_z067.png
+³   ³       ³       tr_mask_z068.png
+³   ³       ³       tr_mask_z069.png
+³   ³       ³       tr_mask_z070.png
+³   ³       ³       tr_mask_z071.png
+³   ³       ³       tr_mask_z072.png
+³   ³       ³       tr_mask_z073.png
+³   ³       ³       tr_mask_z074.png
+³   ³       ³       tr_mask_z075.png
+³   ³       ³       tr_mask_z076.png
+³   ³       ³       tr_mask_z077.png
+³   ³       ³       tr_mask_z078.png
+³   ³       ³       tr_mask_z079.png
+³   ³       ³       tr_mask_z080.png
+³   ³       ³       tr_mask_z081.png
+³   ³       ³       tr_mask_z082.png
+³   ³       ³       tr_mask_z083.png
+³   ³       ³       tr_mask_z084.png
+³   ³       ³       tr_mask_z085.png
+³   ³       ³       tr_mask_z086.png
+³   ³       ³       tr_mask_z087.png
+³   ³       ³       tr_mask_z088.png
+³   ³       ³       tr_mask_z089.png
+³   ³       ³       tr_mask_z090.png
+³   ³       ³       tr_mask_z091.png
+³   ³       ³       tr_mask_z092.png
+³   ³       ³       tr_mask_z093.png
+³   ³       ³       tr_mask_z094.png
+³   ³       ³       tr_mask_z095.png
+³   ³       ³       tr_mask_z096.png
+³   ³       ³       tr_mask_z097.png
+³   ³       ³       tr_mask_z098.png
+³   ³       ³       tr_mask_z099.png
+³   ³       ³       tr_mask_z100.png
+³   ³       ³       
+³   ³       ÃÄÄÄ512
+³   ³       ³       tr_mask_z001.png
+³   ³       ³       tr_mask_z002.png
+³   ³       ³       tr_mask_z003.png
+³   ³       ³       tr_mask_z004.png
+³   ³       ³       tr_mask_z005.png
+³   ³       ³       tr_mask_z006.png
+³   ³       ³       tr_mask_z007.png
+³   ³       ³       tr_mask_z008.png
+³   ³       ³       tr_mask_z009.png
+³   ³       ³       tr_mask_z010.png
+³   ³       ³       tr_mask_z011.png
+³   ³       ³       tr_mask_z012.png
+³   ³       ³       tr_mask_z013.png
+³   ³       ³       tr_mask_z014.png
+³   ³       ³       tr_mask_z015.png
+³   ³       ³       tr_mask_z016.png
+³   ³       ³       tr_mask_z017.png
+³   ³       ³       tr_mask_z018.png
+³   ³       ³       tr_mask_z019.png
+³   ³       ³       tr_mask_z020.png
+³   ³       ³       tr_mask_z021.png
+³   ³       ³       tr_mask_z022.png
+³   ³       ³       tr_mask_z023.png
+³   ³       ³       tr_mask_z024.png
+³   ³       ³       tr_mask_z025.png
+³   ³       ³       tr_mask_z026.png
+³   ³       ³       tr_mask_z027.png
+³   ³       ³       tr_mask_z028.png
+³   ³       ³       tr_mask_z029.png
+³   ³       ³       tr_mask_z030.png
+³   ³       ³       tr_mask_z031.png
+³   ³       ³       tr_mask_z032.png
+³   ³       ³       tr_mask_z033.png
+³   ³       ³       tr_mask_z034.png
+³   ³       ³       tr_mask_z035.png
+³   ³       ³       tr_mask_z036.png
+³   ³       ³       tr_mask_z037.png
+³   ³       ³       tr_mask_z038.png
+³   ³       ³       tr_mask_z039.png
+³   ³       ³       tr_mask_z040.png
+³   ³       ³       tr_mask_z041.png
+³   ³       ³       tr_mask_z042.png
+³   ³       ³       tr_mask_z043.png
+³   ³       ³       tr_mask_z044.png
+³   ³       ³       tr_mask_z045.png
+³   ³       ³       tr_mask_z046.png
+³   ³       ³       tr_mask_z047.png
+³   ³       ³       tr_mask_z048.png
+³   ³       ³       tr_mask_z049.png
+³   ³       ³       tr_mask_z050.png
+³   ³       ³       tr_mask_z051.png
+³   ³       ³       tr_mask_z052.png
+³   ³       ³       tr_mask_z053.png
+³   ³       ³       tr_mask_z054.png
+³   ³       ³       tr_mask_z055.png
+³   ³       ³       tr_mask_z056.png
+³   ³       ³       tr_mask_z057.png
+³   ³       ³       tr_mask_z058.png
+³   ³       ³       tr_mask_z059.png
+³   ³       ³       tr_mask_z060.png
+³   ³       ³       tr_mask_z061.png
+³   ³       ³       tr_mask_z062.png
+³   ³       ³       tr_mask_z063.png
+³   ³       ³       tr_mask_z064.png
+³   ³       ³       tr_mask_z065.png
+³   ³       ³       tr_mask_z066.png
+³   ³       ³       tr_mask_z067.png
+³   ³       ³       tr_mask_z068.png
+³   ³       ³       tr_mask_z069.png
+³   ³       ³       tr_mask_z070.png
+³   ³       ³       tr_mask_z071.png
+³   ³       ³       tr_mask_z072.png
+³   ³       ³       tr_mask_z073.png
+³   ³       ³       tr_mask_z074.png
+³   ³       ³       tr_mask_z075.png
+³   ³       ³       tr_mask_z076.png
+³   ³       ³       tr_mask_z077.png
+³   ³       ³       tr_mask_z078.png
+³   ³       ³       tr_mask_z079.png
+³   ³       ³       tr_mask_z080.png
+³   ³       ³       tr_mask_z081.png
+³   ³       ³       tr_mask_z082.png
+³   ³       ³       tr_mask_z083.png
+³   ³       ³       tr_mask_z084.png
+³   ³       ³       tr_mask_z085.png
+³   ³       ³       tr_mask_z086.png
+³   ³       ³       tr_mask_z087.png
+³   ³       ³       tr_mask_z088.png
+³   ³       ³       tr_mask_z089.png
+³   ³       ³       tr_mask_z090.png
+³   ³       ³       tr_mask_z091.png
+³   ³       ³       tr_mask_z092.png
+³   ³       ³       tr_mask_z093.png
+³   ³       ³       tr_mask_z094.png
+³   ³       ³       tr_mask_z095.png
+³   ³       ³       tr_mask_z096.png
+³   ³       ³       tr_mask_z097.png
+³   ³       ³       tr_mask_z098.png
+³   ³       ³       tr_mask_z099.png
+³   ³       ³       tr_mask_z100.png
+³   ³       ³       
+³   ³       ÀÄÄÄ64
+³   ³               tr_mask_z001.png
+³   ³               tr_mask_z002.png
+³   ³               tr_mask_z003.png
+³   ³               tr_mask_z004.png
+³   ³               tr_mask_z005.png
+³   ³               tr_mask_z006.png
+³   ³               tr_mask_z007.png
+³   ³               tr_mask_z008.png
+³   ³               tr_mask_z009.png
+³   ³               tr_mask_z010.png
+³   ³               tr_mask_z011.png
+³   ³               tr_mask_z012.png
+³   ³               tr_mask_z013.png
+³   ³               tr_mask_z014.png
+³   ³               tr_mask_z015.png
+³   ³               tr_mask_z016.png
+³   ³               tr_mask_z017.png
+³   ³               tr_mask_z018.png
+³   ³               tr_mask_z019.png
+³   ³               tr_mask_z020.png
+³   ³               tr_mask_z021.png
+³   ³               tr_mask_z022.png
+³   ³               tr_mask_z023.png
+³   ³               tr_mask_z024.png
+³   ³               tr_mask_z025.png
+³   ³               tr_mask_z026.png
+³   ³               tr_mask_z027.png
+³   ³               tr_mask_z028.png
+³   ³               tr_mask_z029.png
+³   ³               tr_mask_z030.png
+³   ³               tr_mask_z031.png
+³   ³               tr_mask_z032.png
+³   ³               tr_mask_z033.png
+³   ³               tr_mask_z034.png
+³   ³               tr_mask_z035.png
+³   ³               tr_mask_z036.png
+³   ³               tr_mask_z037.png
+³   ³               tr_mask_z038.png
+³   ³               tr_mask_z039.png
+³   ³               tr_mask_z040.png
+³   ³               tr_mask_z041.png
+³   ³               tr_mask_z042.png
+³   ³               tr_mask_z043.png
+³   ³               tr_mask_z044.png
+³   ³               tr_mask_z045.png
+³   ³               tr_mask_z046.png
+³   ³               tr_mask_z047.png
+³   ³               tr_mask_z048.png
+³   ³               tr_mask_z049.png
+³   ³               tr_mask_z050.png
+³   ³               tr_mask_z051.png
+³   ³               tr_mask_z052.png
+³   ³               tr_mask_z053.png
+³   ³               tr_mask_z054.png
+³   ³               tr_mask_z055.png
+³   ³               tr_mask_z056.png
+³   ³               tr_mask_z057.png
+³   ³               tr_mask_z058.png
+³   ³               tr_mask_z059.png
+³   ³               tr_mask_z060.png
+³   ³               tr_mask_z061.png
+³   ³               tr_mask_z062.png
+³   ³               tr_mask_z063.png
+³   ³               tr_mask_z064.png
+³   ³               tr_mask_z065.png
+³   ³               tr_mask_z066.png
+³   ³               tr_mask_z067.png
+³   ³               tr_mask_z068.png
+³   ³               tr_mask_z069.png
+³   ³               tr_mask_z070.png
+³   ³               tr_mask_z071.png
+³   ³               tr_mask_z072.png
+³   ³               tr_mask_z073.png
+³   ³               tr_mask_z074.png
+³   ³               tr_mask_z075.png
+³   ³               tr_mask_z076.png
+³   ³               tr_mask_z077.png
+³   ³               tr_mask_z078.png
+³   ³               tr_mask_z079.png
+³   ³               tr_mask_z080.png
+³   ³               tr_mask_z081.png
+³   ³               tr_mask_z082.png
+³   ³               tr_mask_z083.png
+³   ³               tr_mask_z084.png
+³   ³               tr_mask_z085.png
+³   ³               tr_mask_z086.png
+³   ³               tr_mask_z087.png
+³   ³               tr_mask_z088.png
+³   ³               tr_mask_z089.png
+³   ³               tr_mask_z090.png
+³   ³               tr_mask_z091.png
+³   ³               tr_mask_z092.png
+³   ³               tr_mask_z093.png
+³   ³               tr_mask_z094.png
+³   ³               tr_mask_z095.png
+³   ³               tr_mask_z096.png
+³   ³               tr_mask_z097.png
+³   ³               tr_mask_z098.png
+³   ³               tr_mask_z099.png
+³   ³               tr_mask_z100.png
+³   ³               
+³   ÀÄÄÄraw
+³           nii_to_pnglist.m
+³           tr_mask.nii.gz
+³           
+ÃÄÄÄreport
+³   ³   LaTeX files.zip
+³   ³   Ultra_Orthodox_Techniques_Vs__SegNET_for_COVID_19_Patients_s_Lungs_CT_Scan_Semantic_Segmentation.pdf
+³   ³   
+³   ÃÄÄÄdata
+³   ³       fullparams.mat
+³   ³       
+³   ÃÄÄÄfigures
+³   ³   ÃÄÄÄbitmaps
+³   ³   ³       hist_3d.bmp
+³   ³   ³       hist_3d.png
+³   ³   ³       i002.png
+³   ³   ³       label_032.png
+³   ³   ³       label_081.png
+³   ³   ³       otsu_081.png
+³   ³   ³       otsu_z032.png
+³   ³   ³       segnet_032.png
+³   ³   ³       segnet_081.png
+³   ³   ³       test_z032.png
+³   ³   ³       test_z081.png
+³   ³   ³       tr_mask_z002.png
+³   ³   ³       
+³   ³   ÃÄÄÄEPS
+³   ³   ³       fig1.cdr
+³   ³   ³       fig2.cdr
+³   ³   ³       fig2.eps
+³   ³   ³       fig3.eps
+³   ³   ³       figcon22.eps
+³   ³   ³       layers.eps
+³   ³   ³       Untitled-1.cdr
+³   ³   ³       
+³   ³   ÃÄÄÄfig
+³   ³   ³       fig2.fig
+³   ³   ³       fig2_like.m
+³   ³   ³       plot_stuf_fig2.m
+³   ³   ³       
+³   ³   ÀÄÄÄSVG
+³   ³           fig1.svg
+³   ³           fig2.svg
+³   ³           fig3 (2).svg
+³   ³           fig3.svg
+³   ³           figcon1.svg
+³   ³           figcon11.svg
+³   ³           figcon12.svg
+³   ³           figcon13.svg
+³   ³           figcon2.svg
+³   ³           figcon21.svg
+³   ³           figcon22.svg
+³   ³           figcon222.svg
+³   ³           layers.svg
+³   ³           
+³   ÀÄÄÄreferences
+³           [1].pdf
+³           [2].pdf
+³           [3].pdf
+³           [5].pdf
+³           [6].pdf
+³           [7].pdf
+³           
+ÃÄÄÄresults
+³   ÃÄÄÄbinary
+³   ³   ÃÄÄÄGlobalThresh
+³   ³   ³   ³   thresh_0z002_output.png
+³   ³   ³   ³   thresh_0z004_output.png
+³   ³   ³   ³   thresh_0z009_output.png
+³   ³   ³   ³   thresh_0z010_output.png
+³   ³   ³   ³   thresh_0z012_output.png
+³   ³   ³   ³   thresh_0z013_output.png
+³   ³   ³   ³   thresh_0z018_output.png
+³   ³   ³   ³   thresh_0z020_output.png
+³   ³   ³   ³   thresh_0z023_output.png
+³   ³   ³   ³   thresh_0z024_output.png
+³   ³   ³   ³   thresh_0z039_output.png
+³   ³   ³   ³   thresh_0z057_output.png
+³   ³   ³   ³   thresh_0z065_output.png
+³   ³   ³   ³   thresh_0z066_output.png
+³   ³   ³   ³   thresh_0z071_output.png
+³   ³   ³   ³   thresh_0z075_output.png
+³   ³   ³   ³   thresh_0z085_output.png
+³   ³   ³   ³   thresh_0z095_output.png
+³   ³   ³   ³   
+³   ³   ³   ÀÄÄÄall
+³   ³   ³           thresh_0z001_output.png
+³   ³   ³           thresh_0z002_output.png
+³   ³   ³           thresh_0z003_output.png
+³   ³   ³           thresh_0z004_output.png
+³   ³   ³           thresh_0z005_output.png
+³   ³   ³           thresh_0z006_output.png
+³   ³   ³           thresh_0z007_output.png
+³   ³   ³           thresh_0z008_output.png
+³   ³   ³           thresh_0z009_output.png
+³   ³   ³           thresh_0z010_output.png
+³   ³   ³           thresh_0z011_output.png
+³   ³   ³           thresh_0z012_output.png
+³   ³   ³           thresh_0z013_output.png
+³   ³   ³           thresh_0z014_output.png
+³   ³   ³           thresh_0z015_output.png
+³   ³   ³           thresh_0z016_output.png
+³   ³   ³           thresh_0z017_output.png
+³   ³   ³           thresh_0z018_output.png
+³   ³   ³           thresh_0z019_output.png
+³   ³   ³           thresh_0z020_output.png
+³   ³   ³           thresh_0z021_output.png
+³   ³   ³           thresh_0z022_output.png
+³   ³   ³           thresh_0z023_output.png
+³   ³   ³           thresh_0z024_output.png
+³   ³   ³           thresh_0z025_output.png
+³   ³   ³           thresh_0z026_output.png
+³   ³   ³           thresh_0z027_output.png
+³   ³   ³           thresh_0z028_output.png
+³   ³   ³           thresh_0z029_output.png
+³   ³   ³           thresh_0z030_output.png
+³   ³   ³           thresh_0z031_output.png
+³   ³   ³           thresh_0z032_output.png
+³   ³   ³           thresh_0z033_output.png
+³   ³   ³           thresh_0z034_output.png
+³   ³   ³           thresh_0z035_output.png
+³   ³   ³           thresh_0z036_output.png
+³   ³   ³           thresh_0z037_output.png
+³   ³   ³           thresh_0z038_output.png
+³   ³   ³           thresh_0z039_output.png
+³   ³   ³           thresh_0z040_output.png
+³   ³   ³           thresh_0z041_output.png
+³   ³   ³           thresh_0z042_output.png
+³   ³   ³           thresh_0z043_output.png
+³   ³   ³           thresh_0z044_output.png
+³   ³   ³           thresh_0z045_output.png
+³   ³   ³           thresh_0z046_output.png
+³   ³   ³           thresh_0z047_output.png
+³   ³   ³           thresh_0z048_output.png
+³   ³   ³           thresh_0z049_output.png
+³   ³   ³           thresh_0z050_output.png
+³   ³   ³           thresh_0z051_output.png
+³   ³   ³           thresh_0z052_output.png
+³   ³   ³           thresh_0z053_output.png
+³   ³   ³           thresh_0z054_output.png
+³   ³   ³           thresh_0z055_output.png
+³   ³   ³           thresh_0z056_output.png
+³   ³   ³           thresh_0z057_output.png
+³   ³   ³           thresh_0z058_output.png
+³   ³   ³           thresh_0z059_output.png
+³   ³   ³           thresh_0z060_output.png
+³   ³   ³           thresh_0z061_output.png
+³   ³   ³           thresh_0z062_output.png
+³   ³   ³           thresh_0z063_output.png
+³   ³   ³           thresh_0z064_output.png
+³   ³   ³           thresh_0z065_output.png
+³   ³   ³           thresh_0z066_output.png
+³   ³   ³           thresh_0z067_output.png
+³   ³   ³           thresh_0z068_output.png
+³   ³   ³           thresh_0z069_output.png
+³   ³   ³           thresh_0z070_output.png
+³   ³   ³           thresh_0z071_output.png
+³   ³   ³           thresh_0z072_output.png
+³   ³   ³           thresh_0z073_output.png
+³   ³   ³           thresh_0z074_output.png
+³   ³   ³           thresh_0z075_output.png
+³   ³   ³           thresh_0z076_output.png
+³   ³   ³           thresh_0z077_output.png
+³   ³   ³           thresh_0z078_output.png
+³   ³   ³           thresh_0z079_output.png
+³   ³   ³           thresh_0z080_output.png
+³   ³   ³           thresh_0z081_output.png
+³   ³   ³           thresh_0z082_output.png
+³   ³   ³           thresh_0z083_output.png
+³   ³   ³           thresh_0z084_output.png
+³   ³   ³           thresh_0z085_output.png
+³   ³   ³           thresh_0z086_output.png
+³   ³   ³           thresh_0z087_output.png
+³   ³   ³           thresh_0z088_output.png
+³   ³   ³           thresh_0z089_output.png
+³   ³   ³           thresh_0z090_output.png
+³   ³   ³           thresh_0z091_output.png
+³   ³   ³           thresh_0z092_output.png
+³   ³   ³           thresh_0z093_output.png
+³   ³   ³           thresh_0z094_output.png
+³   ³   ³           thresh_0z095_output.png
+³   ³   ³           thresh_0z096_output.png
+³   ³   ³           thresh_0z097_output.png
+³   ³   ³           thresh_0z098_output.png
+³   ³   ³           thresh_0z099_output.png
+³   ³   ³           thresh_0z100_output.png
+³   ³   ³           
+³   ³   ÃÄÄÄim_test2
+³   ³   ³       test_z002.png
+³   ³   ³       test_z004.png
+³   ³   ³       test_z009.png
+³   ³   ³       test_z010.png
+³   ³   ³       test_z012.png
+³   ³   ³       test_z013.png
+³   ³   ³       test_z018.png
+³   ³   ³       test_z020.png
+³   ³   ³       test_z023.png
+³   ³   ³       test_z024.png
+³   ³   ³       test_z039.png
+³   ³   ³       test_z057.png
+³   ³   ³       test_z065.png
+³   ³   ³       test_z066.png
+³   ³   ³       test_z071.png
+³   ³   ³       test_z075.png
+³   ³   ³       test_z085.png
+³   ³   ³       test_z095.png
+³   ³   ³       
+³   ³   ÃÄÄÄlabel_test2
+³   ³   ³       test_z002_output.png
+³   ³   ³       test_z004_output.png
+³   ³   ³       test_z009_output.png
+³   ³   ³       test_z010_output.png
+³   ³   ³       test_z012_output.png
+³   ³   ³       test_z013_output.png
+³   ³   ³       test_z018_output.png
+³   ³   ³       test_z020_output.png
+³   ³   ³       test_z023_output.png
+³   ³   ³       test_z024_output.png
+³   ³   ³       test_z039_output.png
+³   ³   ³       test_z057_output.png
+³   ³   ³       test_z065_output.png
+³   ³   ³       test_z066_output.png
+³   ³   ³       test_z071_output.png
+³   ³   ³       test_z075_output.png
+³   ³   ³       test_z085_output.png
+³   ³   ³       test_z095_output.png
+³   ³   ³       
+³   ³   ÃÄÄÄOTSU
+³   ³   ³   ³   thresh_0z002_output.png
+³   ³   ³   ³   thresh_0z004_output.png
+³   ³   ³   ³   thresh_0z009_output.png
+³   ³   ³   ³   thresh_0z010_output.png
+³   ³   ³   ³   thresh_0z012_output.png
+³   ³   ³   ³   thresh_0z013_output.png
+³   ³   ³   ³   thresh_0z018_output.png
+³   ³   ³   ³   thresh_0z020_output.png
+³   ³   ³   ³   thresh_0z023_output.png
+³   ³   ³   ³   thresh_0z024_output.png
+³   ³   ³   ³   thresh_0z039_output.png
+³   ³   ³   ³   thresh_0z057_output.png
+³   ³   ³   ³   thresh_0z065_output.png
+³   ³   ³   ³   thresh_0z066_output.png
+³   ³   ³   ³   thresh_0z071_output.png
+³   ³   ³   ³   thresh_0z075_output.png
+³   ³   ³   ³   thresh_0z085_output.png
+³   ³   ³   ³   thresh_0z095_output.png
+³   ³   ³   ³   
+³   ³   ³   ÀÄÄÄall
+³   ³   ³           thresh_0z001_output.png
+³   ³   ³           thresh_0z002_output.png
+³   ³   ³           thresh_0z003_output.png
+³   ³   ³           thresh_0z004_output.png
+³   ³   ³           thresh_0z005_output.png
+³   ³   ³           thresh_0z006_output.png
+³   ³   ³           thresh_0z007_output.png
+³   ³   ³           thresh_0z008_output.png
+³   ³   ³           thresh_0z009_output.png
+³   ³   ³           thresh_0z010_output.png
+³   ³   ³           thresh_0z011_output.png
+³   ³   ³           thresh_0z012_output.png
+³   ³   ³           thresh_0z013_output.png
+³   ³   ³           thresh_0z014_output.png
+³   ³   ³           thresh_0z015_output.png
+³   ³   ³           thresh_0z016_output.png
+³   ³   ³           thresh_0z017_output.png
+³   ³   ³           thresh_0z018_output.png
+³   ³   ³           thresh_0z019_output.png
+³   ³   ³           thresh_0z020_output.png
+³   ³   ³           thresh_0z021_output.png
+³   ³   ³           thresh_0z022_output.png
+³   ³   ³           thresh_0z023_output.png
+³   ³   ³           thresh_0z024_output.png
+³   ³   ³           thresh_0z025_output.png
+³   ³   ³           thresh_0z026_output.png
+³   ³   ³           thresh_0z027_output.png
+³   ³   ³           thresh_0z028_output.png
+³   ³   ³           thresh_0z029_output.png
+³   ³   ³           thresh_0z030_output.png
+³   ³   ³           thresh_0z031_output.png
+³   ³   ³           thresh_0z032_output.png
+³   ³   ³           thresh_0z033_output.png
+³   ³   ³           thresh_0z034_output.png
+³   ³   ³           thresh_0z035_output.png
+³   ³   ³           thresh_0z036_output.png
+³   ³   ³           thresh_0z037_output.png
+³   ³   ³           thresh_0z038_output.png
+³   ³   ³           thresh_0z039_output.png
+³   ³   ³           thresh_0z040_output.png
+³   ³   ³           thresh_0z041_output.png
+³   ³   ³           thresh_0z042_output.png
+³   ³   ³           thresh_0z043_output.png
+³   ³   ³           thresh_0z044_output.png
+³   ³   ³           thresh_0z045_output.png
+³   ³   ³           thresh_0z046_output.png
+³   ³   ³           thresh_0z047_output.png
+³   ³   ³           thresh_0z048_output.png
+³   ³   ³           thresh_0z049_output.png
+³   ³   ³           thresh_0z050_output.png
+³   ³   ³           thresh_0z051_output.png
+³   ³   ³           thresh_0z052_output.png
+³   ³   ³           thresh_0z053_output.png
+³   ³   ³           thresh_0z054_output.png
+³   ³   ³           thresh_0z055_output.png
+³   ³   ³           thresh_0z056_output.png
+³   ³   ³           thresh_0z057_output.png
+³   ³   ³           thresh_0z058_output.png
+³   ³   ³           thresh_0z059_output.png
+³   ³   ³           thresh_0z060_output.png
+³   ³   ³           thresh_0z061_output.png
+³   ³   ³           thresh_0z062_output.png
+³   ³   ³           thresh_0z063_output.png
+³   ³   ³           thresh_0z064_output.png
+³   ³   ³           thresh_0z065_output.png
+³   ³   ³           thresh_0z066_output.png
+³   ³   ³           thresh_0z067_output.png
+³   ³   ³           thresh_0z068_output.png
+³   ³   ³           thresh_0z069_output.png
+³   ³   ³           thresh_0z070_output.png
+³   ³   ³           thresh_0z071_output.png
+³   ³   ³           thresh_0z072_output.png
+³   ³   ³           thresh_0z073_output.png
+³   ³   ³           thresh_0z074_output.png
+³   ³   ³           thresh_0z075_output.png
+³   ³   ³           thresh_0z076_output.png
+³   ³   ³           thresh_0z077_output.png
+³   ³   ³           thresh_0z078_output.png
+³   ³   ³           thresh_0z079_output.png
+³   ³   ³           thresh_0z080_output.png
+³   ³   ³           thresh_0z081_output.png
+³   ³   ³           thresh_0z082_output.png
+³   ³   ³           thresh_0z083_output.png
+³   ³   ³           thresh_0z084_output.png
+³   ³   ³           thresh_0z085_output.png
+³   ³   ³           thresh_0z086_output.png
+³   ³   ³           thresh_0z087_output.png
+³   ³   ³           thresh_0z088_output.png
+³   ³   ³           thresh_0z089_output.png
+³   ³   ³           thresh_0z090_output.png
+³   ³   ³           thresh_0z091_output.png
+³   ³   ³           thresh_0z092_output.png
+³   ³   ³           thresh_0z093_output.png
+³   ³   ³           thresh_0z094_output.png
+³   ³   ³           thresh_0z095_output.png
+³   ³   ³           thresh_0z096_output.png
+³   ³   ³           thresh_0z097_output.png
+³   ³   ³           thresh_0z098_output.png
+³   ³   ³           thresh_0z099_output.png
+³   ³   ³           thresh_0z100_output.png
+³   ³   ³           
+³   ³   ÀÄÄÄSegNET2
+³   ³           segnet2_z002.png
+³   ³           segnet2_z004.png
+³   ³           segnet2_z009.png
+³   ³           segnet2_z010.png
+³   ³           segnet2_z012.png
+³   ³           segnet2_z013.png
+³   ³           segnet2_z018.png
+³   ³           segnet2_z020.png
+³   ³           segnet2_z023.png
+³   ³           segnet2_z024.png
+³   ³           segnet2_z039.png
+³   ³           segnet2_z057.png
+³   ³           segnet2_z065.png
+³   ³           segnet2_z066.png
+³   ³           segnet2_z071.png
+³   ³           segnet2_z075.png
+³   ³           segnet2_z085.png
+³   ³           segnet2_z095.png
+³   ³           
+³   ÀÄÄÄmulti
+³       ÃÄÄÄarbitrary
+³       ³       test_z006_output.png
+³       ³       test_z007_output.png
+³       ³       test_z008_output.png
+³       ³       test_z016_output.png
+³       ³       test_z018_output.png
+³       ³       test_z032_output.png
+³       ³       test_z039_output.png
+³       ³       test_z040_output.png
+³       ³       test_z047_output.png
+³       ³       test_z054_output.png
+³       ³       test_z058_output.png
+³       ³       test_z069_output.png
+³       ³       test_z080_output.png
+³       ³       test_z081_output.png
+³       ³       test_z082_output.png
+³       ³       test_z094_output.png
+³       ³       test_z095_output.png
+³       ³       test_z100_output.png
+³       ³       
+³       ÃÄÄÄim_test
+³       ³       test_z006.png
+³       ³       test_z007.png
+³       ³       test_z008.png
+³       ³       test_z016.png
+³       ³       test_z018.png
+³       ³       test_z032.png
+³       ³       test_z039.png
+³       ³       test_z040.png
+³       ³       test_z047.png
+³       ³       test_z054.png
+³       ³       test_z058.png
+³       ³       test_z069.png
+³       ³       test_z080.png
+³       ³       test_z081.png
+³       ³       test_z082.png
+³       ³       test_z094.png
+³       ³       test_z095.png
+³       ³       test_z100.png
+³       ³       
+³       ÃÄÄÄlabel_test
+³       ³       test_z006.png
+³       ³       test_z007.png
+³       ³       test_z008.png
+³       ³       test_z016.png
+³       ³       test_z018.png
+³       ³       test_z032.png
+³       ³       test_z039.png
+³       ³       test_z040.png
+³       ³       test_z047.png
+³       ³       test_z054.png
+³       ³       test_z058.png
+³       ³       test_z069.png
+³       ³       test_z080.png
+³       ³       test_z081.png
+³       ³       test_z082.png
+³       ³       test_z094.png
+³       ³       test_z095.png
+³       ³       test_z100.png
+³       ³       
+³       ÃÄÄÄmultiOTSU
+³       ³   ³   thresh_0z006_output.png
+³       ³   ³   thresh_0z007_output.png
+³       ³   ³   thresh_0z008_output.png
+³       ³   ³   thresh_0z016_output.png
+³       ³   ³   thresh_0z018_output.png
+³       ³   ³   thresh_0z032_output.png
+³       ³   ³   thresh_0z039_output.png
+³       ³   ³   thresh_0z040_output.png
+³       ³   ³   thresh_0z047_output.png
+³       ³   ³   thresh_0z054_output.png
+³       ³   ³   thresh_0z058_output.png
+³       ³   ³   thresh_0z069_output.png
+³       ³   ³   thresh_0z080_output.png
+³       ³   ³   thresh_0z081_output.png
+³       ³   ³   thresh_0z082_output.png
+³       ³   ³   thresh_0z094_output.png
+³       ³   ³   thresh_0z095_output.png
+³       ³   ³   thresh_0z100_output.png
+³       ³   ³   
+³       ³   ÃÄÄÄall
+³       ³   ³       thresh_0z001.png
+³       ³   ³       thresh_0z002.png
+³       ³   ³       thresh_0z003.png
+³       ³   ³       thresh_0z004.png
+³       ³   ³       thresh_0z005.png
+³       ³   ³       thresh_0z006.png
+³       ³   ³       thresh_0z007.png
+³       ³   ³       thresh_0z008.png
+³       ³   ³       thresh_0z009.png
+³       ³   ³       thresh_0z010.png
+³       ³   ³       thresh_0z011.png
+³       ³   ³       thresh_0z012.png
+³       ³   ³       thresh_0z013.png
+³       ³   ³       thresh_0z014.png
+³       ³   ³       thresh_0z015.png
+³       ³   ³       thresh_0z016.png
+³       ³   ³       thresh_0z017.png
+³       ³   ³       thresh_0z018.png
+³       ³   ³       thresh_0z019.png
+³       ³   ³       thresh_0z020.png
+³       ³   ³       thresh_0z021.png
+³       ³   ³       thresh_0z022.png
+³       ³   ³       thresh_0z023.png
+³       ³   ³       thresh_0z024.png
+³       ³   ³       thresh_0z025.png
+³       ³   ³       thresh_0z026.png
+³       ³   ³       thresh_0z027.png
+³       ³   ³       thresh_0z028.png
+³       ³   ³       thresh_0z029.png
+³       ³   ³       thresh_0z030.png
+³       ³   ³       thresh_0z031.png
+³       ³   ³       thresh_0z032.png
+³       ³   ³       thresh_0z033.png
+³       ³   ³       thresh_0z034.png
+³       ³   ³       thresh_0z035.png
+³       ³   ³       thresh_0z036.png
+³       ³   ³       thresh_0z037.png
+³       ³   ³       thresh_0z038.png
+³       ³   ³       thresh_0z039.png
+³       ³   ³       thresh_0z040.png
+³       ³   ³       thresh_0z041.png
+³       ³   ³       thresh_0z042.png
+³       ³   ³       thresh_0z043.png
+³       ³   ³       thresh_0z044.png
+³       ³   ³       thresh_0z045.png
+³       ³   ³       thresh_0z046.png
+³       ³   ³       thresh_0z047.png
+³       ³   ³       thresh_0z048.png
+³       ³   ³       thresh_0z049.png
+³       ³   ³       thresh_0z050.png
+³       ³   ³       thresh_0z051.png
+³       ³   ³       thresh_0z052.png
+³       ³   ³       thresh_0z053.png
+³       ³   ³       thresh_0z054.png
+³       ³   ³       thresh_0z055.png
+³       ³   ³       thresh_0z056.png
+³       ³   ³       thresh_0z057.png
+³       ³   ³       thresh_0z058.png
+³       ³   ³       thresh_0z059.png
+³       ³   ³       thresh_0z060.png
+³       ³   ³       thresh_0z061.png
+³       ³   ³       thresh_0z062.png
+³       ³   ³       thresh_0z063.png
+³       ³   ³       thresh_0z064.png
+³       ³   ³       thresh_0z065.png
+³       ³   ³       thresh_0z066.png
+³       ³   ³       thresh_0z067.png
+³       ³   ³       thresh_0z068.png
+³       ³   ³       thresh_0z069.png
+³       ³   ³       thresh_0z070.png
+³       ³   ³       thresh_0z071.png
+³       ³   ³       thresh_0z072.png
+³       ³   ³       thresh_0z073.png
+³       ³   ³       thresh_0z074.png
+³       ³   ³       thresh_0z075.png
+³       ³   ³       thresh_0z076.png
+³       ³   ³       thresh_0z077.png
+³       ³   ³       thresh_0z078.png
+³       ³   ³       thresh_0z079.png
+³       ³   ³       thresh_0z080.png
+³       ³   ³       thresh_0z081.png
+³       ³   ³       thresh_0z082.png
+³       ³   ³       thresh_0z083.png
+³       ³   ³       thresh_0z084.png
+³       ³   ³       thresh_0z085.png
+³       ³   ³       thresh_0z086.png
+³       ³   ³       thresh_0z087.png
+³       ³   ³       thresh_0z088.png
+³       ³   ³       thresh_0z089.png
+³       ³   ³       thresh_0z090.png
+³       ³   ³       thresh_0z091.png
+³       ³   ³       thresh_0z092.png
+³       ³   ³       thresh_0z093.png
+³       ³   ³       thresh_0z094.png
+³       ³   ³       thresh_0z095.png
+³       ³   ³       thresh_0z096.png
+³       ³   ³       thresh_0z097.png
+³       ³   ³       thresh_0z098.png
+³       ³   ³       thresh_0z099.png
+³       ³   ³       thresh_0z100.png
+³       ³   ³       
+³       ³   ÀÄÄÄNew folder
+³       ³           thresh_0z001_output.png
+³       ³           thresh_0z002_output.png
+³       ³           thresh_0z003_output.png
+³       ³           thresh_0z004_output.png
+³       ³           thresh_0z005_output.png
+³       ³           thresh_0z006_output.png
+³       ³           thresh_0z007_output.png
+³       ³           thresh_0z008_output.png
+³       ³           thresh_0z009_output.png
+³       ³           thresh_0z010_output.png
+³       ³           thresh_0z011_output.png
+³       ³           thresh_0z012_output.png
+³       ³           thresh_0z013_output.png
+³       ³           thresh_0z014_output.png
+³       ³           thresh_0z015_output.png
+³       ³           thresh_0z016_output.png
+³       ³           thresh_0z017_output.png
+³       ³           thresh_0z018_output.png
+³       ³           thresh_0z019_output.png
+³       ³           thresh_0z020_output.png
+³       ³           thresh_0z021_output.png
+³       ³           thresh_0z022_output.png
+³       ³           thresh_0z023_output.png
+³       ³           thresh_0z024_output.png
+³       ³           thresh_0z025_output.png
+³       ³           thresh_0z026_output.png
+³       ³           thresh_0z027_output.png
+³       ³           thresh_0z028_output.png
+³       ³           thresh_0z029_output.png
+³       ³           thresh_0z030_output.png
+³       ³           thresh_0z031_output.png
+³       ³           thresh_0z032_output.png
+³       ³           thresh_0z033_output.png
+³       ³           thresh_0z034_output.png
+³       ³           thresh_0z035_output.png
+³       ³           thresh_0z036_output.png
+³       ³           thresh_0z037_output.png
+³       ³           thresh_0z038_output.png
+³       ³           thresh_0z039_output.png
+³       ³           thresh_0z040_output.png
+³       ³           thresh_0z041_output.png
+³       ³           thresh_0z042_output.png
+³       ³           thresh_0z043_output.png
+³       ³           thresh_0z044_output.png
+³       ³           thresh_0z045_output.png
+³       ³           thresh_0z046_output.png
+³       ³           thresh_0z047_output.png
+³       ³           thresh_0z048_output.png
+³       ³           thresh_0z049_output.png
+³       ³           thresh_0z050_output.png
+³       ³           thresh_0z051_output.png
+³       ³           thresh_0z052_output.png
+³       ³           thresh_0z053_output.png
+³       ³           thresh_0z054_output.png
+³       ³           thresh_0z055_output.png
+³       ³           thresh_0z056_output.png
+³       ³           thresh_0z057_output.png
+³       ³           thresh_0z058_output.png
+³       ³           thresh_0z059_output.png
+³       ³           thresh_0z060_output.png
+³       ³           thresh_0z061_output.png
+³       ³           thresh_0z062_output.png
+³       ³           thresh_0z063_output.png
+³       ³           thresh_0z064_output.png
+³       ³           thresh_0z065_output.png
+³       ³           thresh_0z066_output.png
+³       ³           thresh_0z067_output.png
+³       ³           thresh_0z068_output.png
+³       ³           thresh_0z069_output.png
+³       ³           thresh_0z070_output.png
+³       ³           thresh_0z071_output.png
+³       ³           thresh_0z072_output.png
+³       ³           thresh_0z073_output.png
+³       ³           thresh_0z074_output.png
+³       ³           thresh_0z075_output.png
+³       ³           thresh_0z076_output.png
+³       ³           thresh_0z077_output.png
+³       ³           thresh_0z078_output.png
+³       ³           thresh_0z079_output.png
+³       ³           thresh_0z080_output.png
+³       ³           thresh_0z081_output.png
+³       ³           thresh_0z082_output.png
+³       ³           thresh_0z083_output.png
+³       ³           thresh_0z084_output.png
+³       ³           thresh_0z085_output.png
+³       ³           thresh_0z086_output.png
+³       ³           thresh_0z087_output.png
+³       ³           thresh_0z088_output.png
+³       ³           thresh_0z089_output.png
+³       ³           thresh_0z090_output.png
+³       ³           thresh_0z091_output.png
+³       ³           thresh_0z092_output.png
+³       ³           thresh_0z093_output.png
+³       ³           thresh_0z094_output.png
+³       ³           thresh_0z095_output.png
+³       ³           thresh_0z096_output.png
+³       ³           thresh_0z097_output.png
+³       ³           thresh_0z098_output.png
+³       ³           thresh_0z099_output.png
+³       ³           thresh_0z100_output.png
+³       ³           
+³       ÀÄÄÄSegNET
+³               segnet2_z006.png
+³               segnet2_z007.png
+³               segnet2_z008.png
+³               segnet2_z016.png
+³               segnet2_z018.png
+³               segnet2_z032.png
+³               segnet2_z039.png
+³               segnet2_z040.png
+³               segnet2_z047.png
+³               segnet2_z054.png
+³               segnet2_z058.png
+³               segnet2_z069.png
+³               segnet2_z080.png
+³               segnet2_z081.png
+³               segnet2_z082.png
+³               segnet2_z094.png
+³               segnet2_z095.png
+³               segnet2_z100.png
+³               
+ÃÄÄÄscripts
+³   ³   evaluate_binary_classifier.m
+³   ³   evaluate_multi_classification.m
+³   ³   segnet.m
+³   ³   
+³   ÃÄÄÄhistogram_data
+³   ³       calculate_histograms.m
+³   ³       plot_accumilated_histograms.m
+³   ³       
+³   ÀÄÄÄutils
+³       ³   save_results_images.m
+³       ³   
+³       ÀÄÄÄBatch Processor Function
+³               arbitrary_threshold.m
+³               threshold_masks.m
+³               
+ÀÄÄÄtrained_networks
+    ³   binary_class_segnet.mat
+    ³   fullparams.mat
+    ³   multi_class_segnet.mat
+    ³   
+    ÀÄÄÄscrubs
+            net13j.mat
+            net15j.mat
+            net22j__.mat
+            net24j.mat
+            net6j.mat
+            net9j.mat
+            

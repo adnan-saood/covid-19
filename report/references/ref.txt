@@ -1,0 +1,18 @@
+\begin{thebibliography}{00}
+\bibitem{b1} H. Shi et al., “Radiological findings from 81 patients with COVID-19 pneumonia in Wuhan, China: a descriptive study,” The Lancet Infectious Diseases, vol. 20, no. 4, pp. 425–434, Apr. 2020, doi: 10.1016/s1473-3099(20)30086-4.
+
+\bibitem{b2} V. Badrinarayanan, A. Kendall, and R. Cipolla, “SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation,” IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 39, no. 12, pp. 2481–2495, Dec. 2017, doi: 10.1109/tpami.2016.2644615.
+
+\bibitem{b3} S. Almotairi, G. Kareem, M. Aouf, B. Almutairi, and M. A.-M. Salem, “Liver Tumor Segmentation in CT Scans Using Modified SegNet,” Sensors, vol. 20, no. 5, p. 1516, Mar. 2020, doi: 10.3390/s20051516.
+
+
+\bibitem{b4} R. Gonzalez and R. Woods, Digital Image Processing (3rd Edition). USA: Prentice-Hall, Inc., 2006.
+\bibitem{b5} N. Otsu, “A Threshold Selection Method from Gray-Level Histograms,” IEEE Transactions on Systems, Man, and Cybernetics, vol. 9, no. 1, pp. 62–66, Jan. 1979.
+
+\bibitem{b6} D. P. Kingma and J. Ba. (2014). ‘‘Adam: A method for stochastic optimization.’’ [Online]. Available: https://arxiv.org/abs/1412.6980
+
+\bibitem{b7}  “COVID-19,” Medical segmentation. [Online]. Available: http://medicalsegmentation.com/covid19/. [Accessed: 22-Apr-2020]. 
+
+\bibitem{b8} Meizhu Chen et al., “Key to successful treatment of COVID-19: accurate identification of severe risks and early intervention of disease progression.” Cold Spring Harbor Laboratory, 11-Apr-2020, doi: 10.1101/2020.04.06.20054890. 
+
+\end{thebibliography}
